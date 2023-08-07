@@ -7,10 +7,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Tasksuite | Loan Management, Origination, Servicing, and Credit Software`,
-    description: `TASKSUITE combines 4 powerful systems into a single product, enabling lenders to streamline their operations. Request a Demo`,
+    title: `TaskFlow | Call Center, Helpdesk, and Dialer Software`,
+    description: `TaskFlow combines multiple powerful systems into a single product, enabling businesses to streamline their operations. Request a Demo`,
     image: `./static/tasksuite.jpeg`,
-    siteUrl: `https://www.tasksuite.com`,
+    siteUrl: `https://www.taskflow.co/za`,
     robots: `placeholderobot`,
     noIndex: `placeholderindex`,
   },
@@ -19,7 +19,7 @@ module.exports = {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         //production gtm-tag below
-        id: "GTM-WXTCT9W",
+        // id: "GTM-WXTCT9W",
 
         // Include GTM in development.
         //

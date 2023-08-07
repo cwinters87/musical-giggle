@@ -13,9 +13,9 @@ const CurrentProcessCard = () => {
         <div id={styles.titleContainer}>
           <h2 id={styles.title}>Are you happy with your current process?</h2>
           <p id={styles.subTitle}>
-            We know you aren't becasue we've been there too. TaskSuite was built
-            for and by loan management veterans to be the platform that simply
-            didn't exist.
+            We know you aren't becasue we've been there too. TaskFlow was built
+            for and by business veterans to be the platform that simply didn't
+            exist.
           </p>
         </div>
         {/* destop view render */}
@@ -37,7 +37,7 @@ const CurrentProcessCard = () => {
               </div>
               <div className={styles.textContainer}>
                 <p>
-                  <span className={styles.cardHeader}>WITH TASKSUITE</span>
+                  <span className={styles.cardHeader}>WITH TASKFLOW</span>
                 </p>
                 <h3 className={styles.cardTitle}>Simple</h3>
                 <p className={styles.cardSubTitle}>
@@ -53,12 +53,12 @@ const CurrentProcessCard = () => {
             <div className={styles.card} id={styles.cardTwo}>
               <div className={styles.textContainer}>
                 <p>
-                  <span className={styles.cardHeader}>WITH TASKSUITE</span>
+                  <span className={styles.cardHeader}>WITH TASKFLOW</span>
                 </p>
                 <h3 className={styles.cardTitle}>Fast</h3>
                 <p className={styles.cardSubTitle}>
-                  versus today, which requires corroborating data across
-                  multiple systems and reconciling differences.
+                  No more corroborating data across multiple systems and
+                  reconciling differences.
                 </p>
               </div>
               <div className={styles.buttonContainer}>
@@ -70,11 +70,11 @@ const CurrentProcessCard = () => {
             <div className={styles.card} id={styles.cardThree}>
               <div className={styles.textContainer}>
                 <p>
-                  <span className={styles.cardHeader}>WITH TASKSUITE</span>
+                  <span className={styles.cardHeader}>WITH TASKFLOW</span>
                 </p>
                 <h3 className={styles.cardTitle}>Trackable</h3>
                 <p className={styles.cardSubTitle}>
-                  versus a current opaque proces with low visibility into
+                  Say goodbye to opaque processes with low visibility into
                   statuses and dispersed activities.
                 </p>
               </div>
@@ -85,12 +85,12 @@ const CurrentProcessCard = () => {
             <div className={styles.card} id={styles.cardFour}>
               <div className={styles.textContainer}>
                 <p>
-                  <span className={styles.cardHeader}>WITH TASKSUITE</span>
+                  <span className={styles.cardHeader}>WITH TASKFLOW</span>
                 </p>
                 <h3 className={styles.cardTitle}>Efficient</h3>
                 <p className={styles.cardSubTitle}>
-                  versus an existing laborious loan sourcing, servicing, and
-                  management that ultimately costs time and money losses.
+                  Eliminate laborious customer relationship management that
+                  ultimately cost time and money.
                 </p>
               </div>
               <div className={styles.buttonContainer}>
@@ -100,12 +100,12 @@ const CurrentProcessCard = () => {
             <div className={styles.card} id={styles.cardFive}>
               <div className={styles.textContainer}>
                 <p>
-                  <span className={styles.cardHeader}>WITH TASKSUITE</span>
+                  <span className={styles.cardHeader}>WITH TASKFLOW</span>
                 </p>
                 <h3 className={styles.cardTitle}>Customizable</h3>
                 <p className={styles.cardSubTitle}>
-                  versus today's process of utilizing generic software that is
-                  rigid and not designed around the needs of the loan industry.
+                  No more rigid, generic software. TaskFlow is designed around
+                  the needs of your business.
                 </p>
               </div>
               <div className={styles.buttonContainer}>
@@ -121,7 +121,7 @@ const CurrentProcessCard = () => {
             <div className={styles.cardMobile} id={styles.cardOneMobile}>
               <div className={styles.cardContentMobile}>
                 <p>
-                  <span className={styles.cardHeader}>WITH TASKSUITE</span>
+                  <span className={styles.cardHeader}>WITH TASKFLOW</span>
                 </p>
                 <h3 className={styles.cardTitle}>Simple</h3>
                 <p className={styles.cardSubTitle}>
@@ -152,12 +152,12 @@ const CurrentProcessCard = () => {
             <div className={styles.cardMobile} id={styles.cardTwoMobile}>
               <div className={styles.cardContentMobile}>
                 <p>
-                  <span className={styles.cardHeader}>WITH TASKSUITE</span>
+                  <span className={styles.cardHeader}>WITH TASKFLOW</span>
                 </p>
                 <h3 className={styles.cardTitle}>Fast</h3>
                 <p className={styles.cardSubTitle}>
-                  versus today, which requires corroborating data across
-                  multiple systems and reconciling differences.
+                  No more corroborating data across multiple systems and
+                  reconciling differences.
                 </p>
               </div>
               <div className={styles.buttonContainer}>
@@ -167,11 +167,11 @@ const CurrentProcessCard = () => {
             <div className={styles.cardMobile} id={styles.cardThreeMobile}>
               <div className={styles.cardContentMobile}>
                 <p>
-                  <span className={styles.cardHeader}>WITH TASKSUITE</span>
+                  <span className={styles.cardHeader}>WITH TASKFLOW</span>
                 </p>
                 <h3 className={styles.cardTitle}>Trackable</h3>
                 <p className={styles.cardSubTitle}>
-                  versus a current opaque proces with low visibility into
+                  Say goodbye to opaque processes with low visibility into
                   statuses and dispersed activities.
                 </p>
               </div>
@@ -184,12 +184,12 @@ const CurrentProcessCard = () => {
             <div className={styles.cardMobile} id={styles.cardFourMobile}>
               <div className={styles.cardContentMobile}>
                 <p>
-                  <span className={styles.cardHeader}>WITH TASKSUITE</span>
+                  <span className={styles.cardHeader}>WITH TASKFLOW</span>
                 </p>
                 <h3 className={styles.cardTitle}>Efficient</h3>
                 <p className={styles.cardSubTitle}>
-                  versus an existing laborious loan sourcing, servicing, and
-                  management that ultimately costs time and money losses.
+                  Eliminate laborious customer relationship management that
+                  ultimately cost time and money.
                 </p>
               </div>
               <div className={styles.buttonContainer}>
@@ -199,12 +199,12 @@ const CurrentProcessCard = () => {
             <div className={styles.cardMobile} id={styles.cardFiveMobile}>
               <div className={styles.cardContentMobile}>
                 <p>
-                  <span className={styles.cardHeader}>WITH TASKSUITE</span>
+                  <span className={styles.cardHeader}>WITH TASKFLOW</span>
                 </p>
                 <h3 className={styles.cardTitle}>Customizable</h3>
                 <p className={styles.cardSubTitle}>
-                  versus today's process of utilizing generic software that is
-                  rigid and not designed around the needs of the loan industry.
+                  No more rigid, generic software. TaskFlow is designed around
+                  the needs of your business.
                 </p>
               </div>
               <div className={styles.buttonContainer}>
@@ -219,13 +219,13 @@ const CurrentProcessCard = () => {
             onClick={() => {
               navigate("/lenders")
             }}
-            label="For Lenders"
+            label="For Call Centers"
           />
           <ArrowButton
             onClick={() => {
               navigate("/lenders")
             }}
-            label="For Brokers"
+            label="For Financial Services"
           />
         </div>
       </div>

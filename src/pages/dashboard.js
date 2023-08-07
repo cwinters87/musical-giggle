@@ -12,6 +12,6 @@ const Dashboard = () => {
   )
 }
 
-export const Head = () => <Seo title="TaskSuite - Dashboard" />
+export const Head = () => <Seo title="TaskFlow - Dashboard" />
 
 export default withAuthentication(Dashboard)

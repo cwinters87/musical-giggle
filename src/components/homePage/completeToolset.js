@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import Image from "../../images/homePage/completeToolset.png"
 import ImageMobile from "../../images/homePage/completeToolsetMobile.png"
 import * as styles from "./completeToolset.module.css"
@@ -33,17 +34,18 @@ const CompleteToolsetCard = () => {
         <div className={styles.container} id="start">
           <div id={styles.textContainer}>
             <div id={styles.header}>
-              <p>Meet TaskSuite</p>
+              <p>Meet TaskFlow</p>
             </div>
             <div id={styles.title}>
               <h2>A complete toolset - use one or use them all.</h2>
             </div>
             <div id={styles.subTitle}>
               <p>
-                TaskSuite's all-in-one platform puts the control at your
-                fingertips, whether you want <br />
-                to utilize the entire suite or just one of our award-winning
-                solutions.
+                We work with you to develop a customized product that is
+                tailored to your exact <br />
+                business needs. TaskFlow was created exclusively for the unique
+                needs of <br />
+                businesses seeking a comprehensive CRM solution.
               </p>
             </div>
           </div>
@@ -55,58 +57,55 @@ const CompleteToolsetCard = () => {
                 to="/loanorigination"
               >
                 <div className={styles.cardContent}>
-                  <h3 className={styles.cardTitle}>
-                    Loan
-                    <br />
-                    Origination
-                  </h3>
-                  <p className={styles.cardSubTitle}>
-                    Online applications,
-                    <br /> documents, credit checks, <br />
-                    verification, and more.
-                  </p>
+                  <StaticImage
+                    src="../../images/homePage/icon-intro-callcenter-active.png"
+                    placeholder=""
+                    alt="icon"
+                    className={styles.icon}
+                    transformOptions={{ fit: "contain" }}
+                    // styles={{ width: "auto", height: "25px" }}
+                    height={100}
+                  />
+                  <h3 className={styles.cardTitle}>Call Center</h3>
                 </div>
               </Link>
               <Link className={styles.card} to="/loancreditai">
                 <div className={styles.cardContent}>
-                  <h3 className={styles.cardTitle}>
-                    Loan
-                    <br />
-                    Credit AI
-                  </h3>
-                  <p className={styles.cardSubTitle}>
-                    Seamless integration with
-                    <br /> credit bureaus for scoring
-                    <br /> and fraud protection.
-                  </p>
+                  <StaticImage
+                    src="../../images/homePage/icon-intro-crm-inactive.png"
+                    placeholder=""
+                    alt="icon"
+                    className={styles.icon}
+                    transformOptions={{ fit: "contain" }}
+                    height={100}
+                  />
+                  <h3 className={styles.cardTitle}>CRM</h3>
                 </div>
               </Link>
               <Link className={styles.card} to="/loanservicing">
                 <div className={styles.cardContent}>
-                  <h3 className={styles.cardTitle}>
-                    Loan
-                    <br />
-                    Servicing
-                  </h3>
-                  <p className={styles.cardSubTitle}>
-                    Cloud-based loan support
-                    <br /> for reducing risk and
-                    <br /> centralinzaing your portfolio.
-                  </p>
+                  <StaticImage
+                    src="../../images/homePage/icon-intro-helpdesk-inactive.png"
+                    placeholder=""
+                    alt="icon"
+                    className={styles.icon}
+                    transformOptions={{ fit: "contain" }}
+                    height={100}
+                  />
+                  <h3 className={styles.cardTitle}>Helpdesk</h3>
                 </div>
               </Link>
               <Link className={styles.card} to="/loanmanagement">
                 <div className={styles.cardContent}>
-                  <h3 className={styles.cardTitle}>
-                    Loan
-                    <br />
-                    Management
-                  </h3>
-                  <p className={styles.cardSubTitle}>
-                    Automated loan
-                    <br /> application processing, <br />
-                    tracking and reporting.
-                  </p>
+                  <StaticImage
+                    src="../../images/homePage/icon-intro-omni-inactive.png"
+                    placeholder=""
+                    alt="icon"
+                    className={styles.icon}
+                    transformOptions={{ fit: "contain" }}
+                    height={100}
+                  />
+                  <h3 className={styles.cardTitle}>Omni-Channel</h3>
                 </div>
               </Link>
             </div>

@@ -33,6 +33,6 @@ const AboutPage = () => {
   )
 }
 
-export const Head = () => <Seo title="TaskSuite - About" />
+export const Head = () => <Seo title="TaskFlow - About" />
 
 export default AboutPage

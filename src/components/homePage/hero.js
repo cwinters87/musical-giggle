@@ -24,16 +24,16 @@ const Hero = () => {
         </div>
         <section id={styles.subContainerOne}>
           <h1>
-            The complete CRM
-            <br className={styles.breakPointTop} /> processing and
-            <br className={styles.breakPointTop} /> management system
+            The All-In-One Dialer,
+            <br className={styles.breakPointTop} /> Contact Center, and
+            <br className={styles.breakPointTop} /> Helpdesk Solution.
           </h1>
           <h2>
-            TaskSuite brings together loan origination and{" "}
+            TaskFlow brings together Contact Center, CRM, Dialer, and{" "}
             <br className={styles.breakPoint} />
-            management into a single source of truth, enabling your{" "}
+            Helpdesk solutions into a single source of truth, enabling{" "}
             <br className={styles.breakPoint} />
-            team to save time and make better loan decisions.
+            your team to save time and make better business decisions.
           </h2>
           <div id={styles.buttonContainer}>
             <Button

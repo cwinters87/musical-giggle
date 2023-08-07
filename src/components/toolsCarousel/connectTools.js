@@ -26,8 +26,8 @@ const ConnectTools = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <h2>Connect your tools with TaskSuite</h2>
-        <p>Integrate your favorite tools or use our full solution.</p>
+        <h2>Connect your tools with TaskFlow</h2>
+        <p>Integrate your favorite tools or use our complete solution.</p>
       </div>
       <div className={styles.toolsContainer}>
         {data.map((item, index) => (

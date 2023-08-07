@@ -1,24 +1,26 @@
 import * as React from "react"
 import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
-import ProductNav from "../components/loanProducts/productNav"
-import OriginationHero from "../components/loanProducts/hero/heroOrigination"
-import DemoFormCard from "../components/demoForm/demoFormCard"
-import FadeInFromBottom from "../components/effects/fadeInFromBottom"
-import FadeInFromLeft from "../components/effects/fadeInFromLeft"
-import BenefitsOriginationCard from "../components/loanProducts/benefits/benefitsOrigination"
-import DynamicProductCard from "../components/loanProducts/productCard"
-import DynamicProductCardReverse from "../components/loanProducts/productCardReverse"
-import IntegrationsImg from "../images/loanProducts/origination/image-origination-integrations.png"
-import VerificationImg from "../images/loanProducts/origination/image-origination-verification.png"
-import CRMImg from "../images/loanProducts/origination/image-origination-crm.png"
-import PortalImg from "../images/loanProducts/origination/image-origination-portal.png"
-import TogetherCard from "../components/loanProducts/togetherCard"
+// import ProductNav from "../components/loanProducts/productNav"
+// import OriginationHero from "../components/loanProducts/hero/heroOrigination"
+// import DemoFormCard from "../components/demoForm/demoFormCard"
+// import FadeInFromBottom from "../components/effects/fadeInFromBottom"
+// import FadeInFromLeft from "../components/effects/fadeInFromLeft"
+// import BenefitsOriginationCard from "../components/loanProducts/benefits/benefitsOrigination"
+// import DynamicProductCard from "../components/loanProducts/productCard"
+// import DynamicProductCardReverse from "../components/loanProducts/productCardReverse"
+// import IntegrationsImg from "../images/loanProducts/origination/image-origination-integrations.png"
+// import VerificationImg from "../images/loanProducts/origination/image-origination-verification.png"
+// import CRMImg from "../images/loanProducts/origination/image-origination-crm.png"
+// import PortalImg from "../images/loanProducts/origination/image-origination-portal.png"
+// import TogetherCard from "../components/loanProducts/togetherCard"
+import ComingSoonCard from "../components/comingSoon"
 
 const LoanOrigination = () => {
   return (
     <Layout>
-      <ProductNav />
+      <ComingSoonCard />
+      {/* <ProductNav />
       <OriginationHero />
 
       <FadeInFromBottom>
@@ -81,7 +83,7 @@ const LoanOrigination = () => {
 
       <FadeInFromBottom>
         <DemoFormCard />
-      </FadeInFromBottom>
+      </FadeInFromBottom> */}
     </Layout>
   )
 }

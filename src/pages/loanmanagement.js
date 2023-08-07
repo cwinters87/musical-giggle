@@ -1,25 +1,27 @@
 import * as React from "react"
 import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
-import ProductNav from "../components/loanProducts/productNav"
-import ManagementHero from "../components/loanProducts/hero/heroManagement"
-import DemoFormCard from "../components/demoForm/demoFormCard"
-import FadeInFromBottom from "../components/effects/fadeInFromBottom"
-import FadeInFromLeft from "../components/effects/fadeInFromLeft"
-import BenefitsManagementCard from "../components/loanProducts/benefits/benefitsManagement"
-import DynamicProductCard from "../components/loanProducts/productCard"
-import DynamicProductCardReverse from "../components/loanProducts/productCardReverse"
-import ManagementImg from "../images/loanProducts/management/image-management-portal.png"
-import ReportingImg from "../images/loanProducts/management/image-management-reporting.png"
-import SecurityImg from "../images/loanProducts/management/image-management-security.png"
-import IntegrationsImg from "../images/loanProducts/management/image-management-integrations.png"
-import TogetherCard from "../components/loanProducts/togetherCard"
-import ManagementFeaturesCard from "../components/loanProducts/features/managementFeatures"
+// import ProductNav from "../components/loanProducts/productNav"
+// import ManagementHero from "../components/loanProducts/hero/heroManagement"
+// import DemoFormCard from "../components/demoForm/demoFormCard"
+// import FadeInFromBottom from "../components/effects/fadeInFromBottom"
+// import FadeInFromLeft from "../components/effects/fadeInFromLeft"
+// import BenefitsManagementCard from "../components/loanProducts/benefits/benefitsManagement"
+// import DynamicProductCard from "../components/loanProducts/productCard"
+// import DynamicProductCardReverse from "../components/loanProducts/productCardReverse"
+// import ManagementImg from "../images/loanProducts/management/image-management-portal.png"
+// import ReportingImg from "../images/loanProducts/management/image-management-reporting.png"
+// import SecurityImg from "../images/loanProducts/management/image-management-security.png"
+// import IntegrationsImg from "../images/loanProducts/management/image-management-integrations.png"
+// import TogetherCard from "../components/loanProducts/togetherCard"
+// import ManagementFeaturesCard from "../components/loanProducts/features/managementFeatures"
+import ComingSoonCard from "../components/comingSoon"
 
 const LoanManagement = () => {
   return (
     <Layout>
-      <ProductNav />
+      <ComingSoonCard />
+      {/* <ProductNav />
 
       <ManagementHero />
 
@@ -89,7 +91,7 @@ const LoanManagement = () => {
 
       <FadeInFromBottom>
         <DemoFormCard />
-      </FadeInFromBottom>
+      </FadeInFromBottom> */}
     </Layout>
   )
 }

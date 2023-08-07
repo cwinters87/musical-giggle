@@ -11,6 +11,6 @@ const ContactPage = () => {
   )
 }
 
-export const Head = () => <Seo title="TaskSuite - Contact Us" />
+export const Head = () => <Seo title="TaskFlow - Contact Us" />
 
 export default ContactPage

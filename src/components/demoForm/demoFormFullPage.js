@@ -17,7 +17,7 @@ const DemoFormFullPageCard = () => {
         <div className={styles.wrapper}>
           <div className={styles.formContainer}>
             <div className={styles.formWrapper}>
-              <h2 className={styles.title}>Get a TaskSuite demo</h2>
+              <h2 className={styles.title}>Get a TaskFlow demo</h2>
               <div className={styles.featureContainer}>
                 <div className={styles.feature}>
                   <div className={styles.checkmarkWrapper}>

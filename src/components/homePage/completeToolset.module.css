@@ -106,17 +106,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .cardContent:hover h3 {
   transition: 250ms;
   color: var(--lime-green);
-}
-
-.cardContent:hover p {
-  transition: 250ms;
-  filter: brightness(90%);
 }
 
 .cardTitle {

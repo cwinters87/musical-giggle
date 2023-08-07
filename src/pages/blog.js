@@ -11,6 +11,6 @@ const BlogPage = () => {
   )
 }
 
-export const Head = () => <Seo title="TaskSuite - Blog" />
+export const Head = () => <Seo title="TaskFlow - Blog" />
 
 export default BlogPage

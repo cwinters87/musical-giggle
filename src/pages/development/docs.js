@@ -13,6 +13,6 @@ const DocsPage = () => {
   )
 }
 
-export const Head = () => <Seo title="TaskSuite - Api Docs" />
+export const Head = () => <Seo title="TaskFlow - Api Docs" />
 
 export default withAuthentication(DocsPage)

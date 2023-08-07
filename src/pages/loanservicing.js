@@ -1,25 +1,27 @@
 import * as React from "react"
 import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
-import ProductNav from "../components/loanProducts/productNav"
-import ServicingHero from "../components/loanProducts/hero/heroServicing"
-import DemoFormCard from "../components/demoForm/demoFormCard"
-import FadeInFromBottom from "../components/effects/fadeInFromBottom"
-import FadeInFromLeft from "../components/effects/fadeInFromLeft"
-import BenefitsServicingCard from "../components/loanProducts/benefits/benefitsServicing"
-import DynamicProductCard from "../components/loanProducts/productCard"
-import DynamicProductCardReverse from "../components/loanProducts/productCardReverse"
-import LoanStatsImg from "../images/loanProducts/servicing/image-servicing-loanstats.png"
-import DashoardsImg from "../images/loanProducts/servicing/image-servicing-dashboards.png"
-import WorkflowsImg from "../images/loanProducts/servicing/image-servicing-workflows.png"
-import PortalImg from "../images/loanProducts/servicing/image-servicing-portal.png"
-import TogetherCard from "../components/loanProducts/togetherCard"
-import ServicingFeaturesCard from "../components/loanProducts/features/servicingFeatures"
+import ComingSoon from "../components/comingSoon"
+// import ProductNav from "../components/loanProducts/productNav"
+// import ServicingHero from "../components/loanProducts/hero/heroServicing"
+// import DemoFormCard from "../components/demoForm/demoFormCard"
+// import FadeInFromBottom from "../components/effects/fadeInFromBottom"
+// import FadeInFromLeft from "../components/effects/fadeInFromLeft"
+// import BenefitsServicingCard from "../components/loanProducts/benefits/benefitsServicing"
+// import DynamicProductCard from "../components/loanProducts/productCard"
+// import DynamicProductCardReverse from "../components/loanProducts/productCardReverse"
+// import LoanStatsImg from "../images/loanProducts/servicing/image-servicing-loanstats.png"
+// import DashoardsImg from "../images/loanProducts/servicing/image-servicing-dashboards.png"
+// import WorkflowsImg from "../images/loanProducts/servicing/image-servicing-workflows.png"
+// import PortalImg from "../images/loanProducts/servicing/image-servicing-portal.png"
+// import TogetherCard from "../components/loanProducts/togetherCard"
+// import ServicingFeaturesCard from "../components/loanProducts/features/servicingFeatures"
 
 const LoanServicing = () => {
   return (
     <Layout>
-      <ProductNav />
+      <ComingSoon />
+      {/* <ProductNav />
       <ServicingHero />
 
       <FadeInFromBottom>
@@ -86,7 +88,7 @@ const LoanServicing = () => {
 
       <FadeInFromBottom>
         <DemoFormCard />
-      </FadeInFromBottom>
+      </FadeInFromBottom> */}
     </Layout>
   )
 }

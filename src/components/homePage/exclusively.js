@@ -17,19 +17,27 @@ const ExclusivelyCard = () => {
           </div>
           <div className={styles.middleWrapper}>
             <h2 className={styles.title}>
-              Created exclusively for the unique
-              <br className={styles.topBreakPoint} /> needs of the loan
-              industry.
+              Created Exclusively for
+              <br className={styles.topBreakPoint} /> the Unique Needs of{" "}
+              <br className={styles.topBreakPoint} />
+              Modern Businesses.
             </h2>
             <p className={styles.subTitle}>
-              Created by loan veterans, TaskSuite was built from the ground up
-              to deliver a <br className={styles.bottomBreakPoint} />
-              forcomplete solution the complex needs of brokers and lenders. We
-              understand <br className={styles.bottomBreakPoint} />
-              the complexities and nuances of the loan industry, which is why
-              we've
-              <br className={styles.bottomBreakPoint} /> been able to ensure our
-              solution is tailored to meet your needs and use cases.
+              Developed by industy beterans, TaskFlow was built from{" "}
+              <br className={styles.bottomBreakPoint} />
+              the ground up to deliver a comprehensive solution for{" "}
+              <br className={styles.bottomBreakPoint} />
+              the complex needs of businesses seeking to streamline{" "}
+              <br className={styles.bottomBreakPoint} /> their customer
+              releationship management, contact center,{" "}
+              <br className={styles.bottomBreakPoint} />
+              and helpdesk operations. We understand the intricacies{" "}
+              <br className={styles.bottomBreakPoint} />
+              and challenges of today's business landscape, which is{" "}
+              <br className={styles.bottomBreakPoint} />
+              why we've ensured our solution is tailored to meet your{" "}
+              <br className={styles.bottomBreakPoint} />
+              needs and uses cases.
             </p>
             <div className={styles.imgContainerMobile}>
               <img src={Image} alt="TaskSuite Origination Product" />

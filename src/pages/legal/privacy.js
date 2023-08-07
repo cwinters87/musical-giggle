@@ -10,6 +10,6 @@ const PrivacyPage = () => {
   )
 }
 
-export const Head = () => <title>TaskSuite - Privacy Policy</title>
+export const Head = () => <title>TaskFlow - Privacy Policy</title>
 
 export default PrivacyPage

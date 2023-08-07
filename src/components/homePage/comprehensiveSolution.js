@@ -12,12 +12,14 @@ const ComprehensiveSolutionCard = () => {
       <div className={styles.container}>
         <div id={styles.titleContainer}>
           <h2 id={styles.title}>
-            The industry's only comprehensive
-            <br className={styles.breakPoint} /> loan management solution
+            The Industry's Complete Comprehensive
+            <br className={styles.breakPoint} /> Business Process solution
           </h2>
           <p id={styles.subTitle}>
-            TaskSuite streamlines and automates the entire loan process, making
-            <br /> it easy to manage and track loans from day zero to close.
+            TaskFlow simplifies and automates your entire business process,
+            making it effortless to manage
+            <br /> and track customer relationships from the first interactio to
+            long-term engagement.
           </p>
         </div>
         <div id={styles.cardContainer}>
@@ -26,7 +28,7 @@ const ComprehensiveSolutionCard = () => {
             className={styles.card}
           >
             <h3>Full-Service Suite</h3>
-            <p>Not just a tool, TaskSuite is an end-to-end loan system</p>
+            <p>Not just a tool, TaskFlow is an end-to-end business system</p>
           </div>
           <div
             style={{ backgroundImage: `url(${backgroundImgFit})` }}

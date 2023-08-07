@@ -1,25 +1,27 @@
 import * as React from "react"
 import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
-import ProductNav from "../components/loanProducts/productNav"
-import CreditHero from "../components/loanProducts/hero/heroCredit"
-import DemoFormCard from "../components/demoForm/demoFormCard"
-import FadeInFromBottom from "../components/effects/fadeInFromBottom"
-import FadeInFromLeft from "../components/effects/fadeInFromLeft"
-import BenefitsCreditCard from "../components/loanProducts/benefits/benefitsCredit"
-import DynamicProductCard from "../components/loanProducts/productCard"
-import DynamicProductCardReverse from "../components/loanProducts/productCardReverse"
-import IntegrationImg from "../images/loanProducts/creditAi/image-creditai-integration.png"
-import AutoImg from "../images/loanProducts/creditAi/image-creditai-auto.png"
-import ScanningImg from "../images/loanProducts/creditAi/image-creditai-scanning.png"
-import RulesImg from "../images/loanProducts/creditAi/image-creditai-rules.png"
-import TogetherCard from "../components/loanProducts/togetherCard"
-import CreditFeaturesCard from "../components/loanProducts/features/creditFeatures"
+// import ProductNav from "../components/loanProducts/productNav"
+// import CreditHero from "../components/loanProducts/hero/heroCredit"
+// import DemoFormCard from "../components/demoForm/demoFormCard"
+// import FadeInFromBottom from "../components/effects/fadeInFromBottom"
+// import FadeInFromLeft from "../components/effects/fadeInFromLeft"
+// import BenefitsCreditCard from "../components/loanProducts/benefits/benefitsCredit"
+// import DynamicProductCard from "../components/loanProducts/productCard"
+// import DynamicProductCardReverse from "../components/loanProducts/productCardReverse"
+// import IntegrationImg from "../images/loanProducts/creditAi/image-creditai-integration.png"
+// import AutoImg from "../images/loanProducts/creditAi/image-creditai-auto.png"
+// import ScanningImg from "../images/loanProducts/creditAi/image-creditai-scanning.png"
+// import RulesImg from "../images/loanProducts/creditAi/image-creditai-rules.png"
+// import TogetherCard from "../components/loanProducts/togetherCard"
+// import CreditFeaturesCard from "../components/loanProducts/features/creditFeatures"
+import ComingSoonCard from "../components/comingSoon"
 
 const LoanCreditAi = () => {
   return (
     <Layout>
-      <ProductNav />
+      <ComingSoonCard />
+      {/* <ProductNav />
       <CreditHero />
 
       <FadeInFromBottom>
@@ -88,7 +90,7 @@ const LoanCreditAi = () => {
 
       <FadeInFromBottom>
         <DemoFormCard />
-      </FadeInFromBottom>
+      </FadeInFromBottom> */}
     </Layout>
   )
 }

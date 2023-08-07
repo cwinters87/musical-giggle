@@ -10,6 +10,6 @@ const TermsPage = () => {
   )
 }
 
-export const Head = () => <title>TaskSuite - Terms and Conditions</title>
+export const Head = () => <title>TaskFlow - Terms and Conditions</title>
 
 export default TermsPage
