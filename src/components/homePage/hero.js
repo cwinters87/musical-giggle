@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
         <section id={styles.subContainerOne}>
           <h1>
-            The complete loan
+            The complete CRM
             <br className={styles.breakPointTop} /> processing and
             <br className={styles.breakPointTop} /> management system
           </h1>
