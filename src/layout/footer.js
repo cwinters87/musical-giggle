@@ -13,7 +13,7 @@ const Footer = () => {
             <div id={styles.imgWrapper}>
               <StaticImage
                 id={styles.image}
-                src="../images/footer/TaskSuite_Logo_Full_Equal_LimeWhite.png"
+                src="../images/footer/logo-full-white.png"
                 placeholder=""
                 alt="tasksuite logo"
               />

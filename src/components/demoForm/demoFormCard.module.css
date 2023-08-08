@@ -15,7 +15,7 @@
 .wrapper {
   height: 100%;
   max-width: 100%;
-  background-color: var(--khaki-light);
+  background-color: var(--khaki);
   border-radius: 18px;
   display: flex;
   flex-direction: row;

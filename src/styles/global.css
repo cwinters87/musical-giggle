@@ -76,16 +76,33 @@ a {
   --font-semi-bold: "MatterSemiBold", sans-serif;
   --font-regular: "MatterRegular", sans-serif;
 
-  --money-green: #004535;
+
+  /* TaskSuite Colors: */
+  /* --money-green: #004535;
   --lime-green: #00f86f;
   --cobalt-blue: #105abc;
   --navy-blue: #0e2a52;
   --titanium-grey: #e1e1e1;
   --grey: #efece9;
-  /* --khaki: #DCCBB1; */
   --khaki: #eee5d8;
-  /* --khaki-light: #EEE5D8; */
-  --khaki-light: #efece9;
+  --khaki-light: #efece9; */
+
+
+/* TaskFlow Colors: */
+  --money-green: #153775;
+  --lime-green: #00f86f;
+  --cobalt-blue: #105abc;
+  --navy-blue: #0e2a52;
+  --titanium-grey: #e1e1e1;
+  --grey: #efece9;
+  --khaki: #efece9;
+  --khaki-light: #e1e1e1;
+
+/*  #153775 (Main)
+    #102F60 (Dark, 1st solution button)
+    #0E416C (Mid, 2nd solution button)
+    #246694 (Light, 3rd solution button)
+    #1A37FF (Buttons) */
 
   --primary-font-color: #000000;
   --secondary-font-color: #ffffff;
@@ -104,6 +121,7 @@ a {
   --test-pallette-grey: #ada1ad;
   --test-pallette-green: #004535;
   --test-pallette-red: #ac0212;
+  
 }
 
 *,
@@ -128,9 +146,9 @@ a {
     }
 } */
 
-.modal-open {
+/* .modal-open {
   background-color: var(--khaki-light);
-}
+} */
 
 /* .modal-content {
     
@@ -150,7 +168,7 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--khaki);
+  background: var(--titanium-grey);
 }
 
 /* Handle on hover */
