@@ -24,9 +24,9 @@ const Hero = () => {
         </div>
         <section id={styles.subContainerOne}>
           <h1>
-            The All-In-One Contact
-            <br className={styles.breakPointTop} /> Center, Dialer, and
-            <br className={styles.breakPointTop} /> Helpdesk Solution.
+            The All-In-One
+            <br className={styles.breakPointTop} /> Center Center, Helpdesk,
+            <br className={styles.breakPointTop} /> and Dialer Solution.
           </h1>
           <h2>
             TaskFlow brings together Contact Center, CRM, Dialer, and{" "}
