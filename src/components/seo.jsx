@@ -42,23 +42,20 @@ export const Seo = ({
       <title>{seo.title}</title>
       <meta
         name="title"
-        content=" Loan Management, Origination, Servicing, and Credit Software"
+        content="Contact Center, helpdesk, CRM, and Omni-Channel Communication Business Solutions"
       ></meta>
       {/* <script>{googleScript}</script> */}
       <meta name="description" content={seo.description} />
-      <link
-        rel="image_src"
-        href="https://i.ibb.co/N1jbm4q/Untitled-design-1.png"
-      />
+      <link rel="image_src" href="https://i.ibb.co/XCCr6sM/taskflow.png" />
 
       <meta name={seo.robots} content={seo.noIndex} />
 
-      <meta property="og:title" content="TaskSuite" />
+      <meta property="og:title" content="TaskFlow" />
       <meta property="og:description" content={seo.description} />
       <meta property="og:url" content={seo.url} />
       <meta
         property="og:image"
-        content="https://i.ibb.co/N1jbm4q/Untitled-design-1.png"
+        content="https://i.ibb.co/XCCr6sM/taskflow.png"
       />
       <meta property="og:image:width" content="1280" />
       <meta property="og:image:height" content="945" />
@@ -67,7 +64,7 @@ export const Seo = ({
       <meta name="twitter:description" content={seo.description} />
       <meta
         name="twitter:image"
-        content="https://i.ibb.co/N1jbm4q/Untitled-design-1.png"
+        content="https://i.ibb.co/XCCr6sM/taskflow.png"
       />
 
       {/* <meta name="image" content={seo.image} /> */}

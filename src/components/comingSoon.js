@@ -16,8 +16,8 @@ const ComingSoonCard = () => {
         <p>
           In the meantime, if you have any questions or need assistance, please
           don't hesitate to contact our support team at{" "}
-          <a href="mailto:info@tasksuite.com">info@tasksuite.com</a> or call us
-          at <a href="tel:512.900.7468">512-900-7468.</a>
+          <a href="mailto:sales@taskflow.co.za">sales@taskflow.co.za</a> or call
+          us at <a href="tel:087 655 0505">087 655 0505.</a>
         </p>
         <p>
           We appreciate your patience and look forward to serving you better

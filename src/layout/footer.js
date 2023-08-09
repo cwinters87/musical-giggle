@@ -25,29 +25,29 @@ const Footer = () => {
               <h5>Products</h5>
               <ul className={styles.list}>
                 <li>
-                  <Link className={styles.link} to="/loansuite">
-                    Loan Suite
+                  <Link className={styles.link} to="/contactcenter">
+                    Contact Center Solution
                   </Link>
                 </li>
                 <li>
-                  <Link className={styles.link} to="/loanorigination">
-                    Loan Origination
+                  <Link className={styles.link} to="/helpdesk">
+                    Helpdesk Solution
                   </Link>
                 </li>
                 <li>
-                  <Link className={styles.link} to="/loancreditai">
-                    Loan Credit AI
+                  <Link className={styles.link} to="/crm">
+                    CRM
                   </Link>
                 </li>
                 <li>
-                  <Link className={styles.link} to="/loanservicing">
-                    Loan Servicing
+                  <Link className={styles.link} to="/omnichannel">
+                    Omni-Channel Communication
                   </Link>
                 </li>
                 <li>
-                  <Link className={styles.link} to="/loanmanagement">
+                  {/* <Link className={styles.link} to="/loanmanagement">
                     Loan Management
-                  </Link>
+                  </Link> */}
                 </li>
               </ul>
             </div>
@@ -55,13 +55,13 @@ const Footer = () => {
               <h5>Use Cases</h5>
               <ul className={styles.list}>
                 <li>
-                  <Link className={styles.link} to="/lenders">
-                    For Lenders
+                  <Link className={styles.link} to="/contactcenter">
+                    Contact Centers
                   </Link>
                 </li>
                 <li>
-                  <Link className={styles.link} to="/brokers">
-                    For Brokers
+                  <Link className={styles.link} to="/contactcenter">
+                    Financial Services
                   </Link>
                 </li>
               </ul>

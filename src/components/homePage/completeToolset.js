@@ -61,9 +61,7 @@ const CompleteToolsetCard = () => {
                     src="../../images/homePage/icon-intro-callcenter-active.png"
                     placeholder=""
                     alt="icon"
-                    className={styles.icon}
                     transformOptions={{ fit: "contain" }}
-                    // styles={{ width: "auto", height: "25px" }}
                     height={100}
                   />
                   <h3 className={styles.cardTitle}>Call Center</h3>
@@ -75,7 +73,6 @@ const CompleteToolsetCard = () => {
                     src="../../images/homePage/icon-intro-crm-inactive.png"
                     placeholder=""
                     alt="icon"
-                    className={styles.icon}
                     transformOptions={{ fit: "contain" }}
                     height={100}
                   />
@@ -88,7 +85,6 @@ const CompleteToolsetCard = () => {
                     src="../../images/homePage/icon-intro-helpdesk-inactive.png"
                     placeholder=""
                     alt="icon"
-                    className={styles.icon}
                     transformOptions={{ fit: "contain" }}
                     height={100}
                   />
@@ -101,7 +97,6 @@ const CompleteToolsetCard = () => {
                     src="../../images/homePage/icon-intro-omni-inactive.png"
                     placeholder=""
                     alt="icon"
-                    className={styles.icon}
                     transformOptions={{ fit: "contain" }}
                     height={100}
                   />

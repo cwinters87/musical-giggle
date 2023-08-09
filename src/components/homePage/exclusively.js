@@ -23,7 +23,7 @@ const ExclusivelyCard = () => {
               Modern Businesses.
             </h2>
             <p className={styles.subTitle}>
-              Developed by industy beterans, TaskFlow was built from{" "}
+              Developed by industy veterans, TaskFlow was built from{" "}
               <br className={styles.bottomBreakPoint} />
               the ground up to deliver a comprehensive solution for{" "}
               <br className={styles.bottomBreakPoint} />

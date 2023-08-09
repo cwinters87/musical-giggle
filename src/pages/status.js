@@ -17,6 +17,6 @@ const StatusPage = () => {
   )
 }
 
-export const Head = () => <Seo title="TaskSuite - Status" />
+export const Head = () => <Seo title="TaskFlow - Status" />
 
 export default StatusPage

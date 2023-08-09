@@ -17,7 +17,7 @@ import Layout from "../layout/layout"
 // import ManagementFeaturesCard from "../components/loanProducts/features/managementFeatures"
 import ComingSoonCard from "../components/comingSoon"
 
-const LoanManagement = () => {
+const OmniChannel = () => {
   return (
     <Layout>
       <ComingSoonCard />
@@ -96,6 +96,6 @@ const LoanManagement = () => {
   )
 }
 
-export const Head = () => <Seo title="TaskSuite - Loan Managaement Suite" />
+export const Head = () => <Seo title="TaskFlow - Omni-Channel Solution" />
 
-export default LoanManagement
+export default OmniChannel

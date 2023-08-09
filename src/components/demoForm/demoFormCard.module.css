@@ -75,6 +75,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 20px;
+  width: auto;
 }
 
 .buttonWrapper {

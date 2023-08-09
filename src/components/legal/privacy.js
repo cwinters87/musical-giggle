@@ -5,14 +5,14 @@ const PrivacyPolicy = () => {
   return (
     <div className={styles.sectionWrapper}>
       <main className={styles.PrivacyContainer}>
-        <h1>TaskSuite Privacy Policy</h1>
+        <h1>TaskFlow Privacy Policy</h1>
         <p>Last updated: 06/29/2023</p>
 
         <p>
-          At TaskSuite ("we", "us", or "our"), we take the privacy and security
+          At TaskFlow ("we", "us", or "our"), we take the privacy and security
           of your personal information very seriously. This Privacy Policy
           outlines how we collect, use, and protect your information when you
-          visit and use our website at tasksuite.com ("Site") and our
+          visit and use our website at taskflow.co.za ("Site") and our
           cloud-based loan software services ("Services"). By using our Site or
           Services, you agree to the collection and use of information in
           accordance with this policy.
@@ -177,7 +177,7 @@ const PrivacyPolicy = () => {
 
         <p>
           If you have any questions about this Privacy Policy, please contact us
-          at info@tasksuite.com.
+          at sales@taskflow.co.za.
         </p>
       </main>
     </div>

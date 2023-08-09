@@ -11,6 +11,6 @@ const FaqsPage = () => {
   )
 }
 
-export const Head = () => <Seo title="TaskSuite - FAQs" />
+export const Head = () => <Seo title="TaskFlow - FAQs" />
 
 export default FaqsPage

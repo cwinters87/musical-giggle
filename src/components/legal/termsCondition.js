@@ -7,7 +7,7 @@ const TermsCondition = () => {
       <main className={styles.container}>
         <section>
           <h1>
-            GOTECH INVESTMENTS, LLC D/B/A TASKSUITE
+            GOTECH INVESTMENTS, LLC D/B/A TASKFLOW
             <br />
             SOFTWARE AS A SERVICE
             <br />
@@ -22,7 +22,7 @@ const TermsCondition = () => {
             These Terms of Service together with any Service Order and any
             addenda to either of them &#40;collectively the “Agreement”&#41; are
             a contract that governs your access to GoTech Investments, dba
-            Tasksuite&#39;s software &#40;collectively the “Service”&#41;. The
+            TaskFlow&#39;s software &#40;collectively the “Service”&#41;. The
             Agreement is effective as of the date that you sign up for any
             Service online or submit a Service Order that references these Terms
             of Service &#40;the “Effective Date”&#41;.
@@ -168,12 +168,12 @@ const TermsCondition = () => {
               </p>
               <p>
                 The “Service Provider Group” means Service Provider and its
-                affiliates, including GoTech Investments, dba Tasksuite and our
+                affiliates, including GoTech Investments, dba TaskFlow and our
                 subsidiary Taskflow individually or collectively, as the context
                 may require.
               </p>
               <p>
-                The “Software” means the computer software known as TaskSuite
+                The “Software” means the computer software known as TaskFlow
                 developed and owned by GoTech Investments, LLC and irrevocably
                 licensed to Service Provider to use and market within the United
                 States, together with any Software Updates, and specifically
@@ -413,7 +413,7 @@ const TermsCondition = () => {
               <ol className={styles.upperAlpha}>
                 <li>
                   All support requests must be submitted via e-mail to
-                  support@tasksuite.com. Solely in the case of an emergency, a
+                  support@taskflow.co.za. Solely in the case of an emergency, a
                   support request may only be submitted telephonically to
                   &#40;512&#41; 900-7468, but any such telephonic report must be
                   promptly followed up in writing to the email address specified
@@ -519,7 +519,7 @@ const TermsCondition = () => {
                   <ol className={styles.lowerRoman}>
                     <li>
                       Customer shall defend, indemnify and hold harmless Service
-                      Provider, GoTech Investments LLC, dba Tasksuite, and the
+                      Provider, GoTech Investments LLC, dba TaskFlow, and the
                       respective officers, directors, members, managers,
                       contractors and agents of each &#40;“SP Indemnified
                       Parties”&#41; from any and all losses, claims, liabilities

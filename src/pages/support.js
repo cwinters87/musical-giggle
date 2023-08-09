@@ -11,6 +11,6 @@ const SupportPage = () => {
   )
 }
 
-export const Head = () => <Seo title="TaskSuite - Support" />
+export const Head = () => <Seo title="TaskFlow - Support" />
 
 export default SupportPage

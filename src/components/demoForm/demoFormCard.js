@@ -26,6 +26,8 @@ const DemoFormCard = () => {
                       src="../../images/components/check.png"
                       placeholder=""
                       alt="checkmark"
+                      transformOptions={{ fit: "contain" }}
+                      height={20}
                     />
                   </div>
                   <p>Discover simpler & faster workflows</p>
@@ -36,6 +38,8 @@ const DemoFormCard = () => {
                       src="../../images/components/check.png"
                       placeholder=""
                       alt="checkmark"
+                      transformOptions={{ fit: "contain" }}
+                      height={20}
                     />
                   </div>
                   <p>Experience revolutionary technology firsthand</p>
@@ -46,6 +50,8 @@ const DemoFormCard = () => {
                       src="../../images/components/check.png"
                       placeholder=""
                       alt="checkmark"
+                      transformOptions={{ fit: "contain" }}
+                      height={20}
                     />
                   </div>
                   <p>Discover customizable & adaptable solutions</p>

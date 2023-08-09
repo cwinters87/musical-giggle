@@ -191,27 +191,27 @@ function NavBar() {
                   "aria-labelledby": "basic-button",
                 }}
               >
-                <DropdownItem onClick={() => navigate("/loansuite")}>
+                {/* <DropdownItem onClick={() => navigate("/loansuite")}>
                   Loan Suite
+                </DropdownItem> */}
+                <DropdownItem onClick={() => navigate("/contactcenter")}>
+                  Contact Center Solution
                 </DropdownItem>
-                <DropdownItem onClick={() => navigate("/loanorigination")}>
-                  Loan Origination Suite
+                <DropdownItem onClick={() => navigate("/helpdesk")}>
+                  Helpdesk Solution
                 </DropdownItem>
-                <DropdownItem onClick={() => navigate("/loanmanagement")}>
-                  Loan Management Suite
+                <DropdownItem onClick={() => navigate("/crm")}>
+                  CRM
                 </DropdownItem>
-                <DropdownItem onClick={() => navigate("/loanservicing")}>
-                  Loan Servicing Suite
-                </DropdownItem>
-                <DropdownItem onClick={() => navigate("/loancreditai")}>
-                  Loan Credit ai
+                <DropdownItem onClick={() => navigate("/omnichannel")}>
+                  Omni-Channel Communication
                 </DropdownItem>
               </Dropdown>
-              <MenuLink onClick={() => navigate("/lenders")}>
-                For Lenders
+              <MenuLink onClick={() => navigate("/contactcenter")}>
+                For Contact Centers
               </MenuLink>
-              <MenuLink onClick={() => navigate("/brokers")}>
-                For Brokers
+              <MenuLink onClick={() => navigate("/contactcenter")}>
+                For Financial Services
               </MenuLink>
               <MenuLink onClick={() => navigate("/about")}>About</MenuLink>
             </MenuGroup>
@@ -294,28 +294,26 @@ function NavBar() {
                 </MenuLink>
               </AccordionSummary>
               <AccordionDetails>
-                <MenuLink onClick={() => navigate("/loansuite")}>
+                {/* <MenuLink onClick={() => navigate("/loansuite")}>
                   Loan Suite
+                </MenuLink> */}
+                <MenuLink onClick={() => navigate("/contactcenter")}>
+                  Contact Center Solution
                 </MenuLink>
-                <MenuLink onClick={() => navigate("/loanorigination")}>
-                  Loan Origination Suite
+                <MenuLink onClick={() => navigate("/helpdesk")}>
+                  Helpdesk Solution
                 </MenuLink>
-                <MenuLink onClick={() => navigate("/loanmanagement")}>
-                  Loan Management Suite
-                </MenuLink>
-                <MenuLink onClick={() => navigate("/loanservicing")}>
-                  Loan Servicing Suite
-                </MenuLink>
-                <MenuLink onClick={() => navigate("/loancreditai")}>
-                  Loan Credit ai
+                <MenuLink onClick={() => navigate("/crm")}>CRM</MenuLink>
+                <MenuLink onClick={() => navigate("/omnichannel")}>
+                  Omni-Channel Communication
                 </MenuLink>
               </AccordionDetails>
             </Accordion>
-            <MenuLink onClick={() => navigate("/lenders")}>
-              For Lenders
+            <MenuLink onClick={() => navigate("/contactcenter")}>
+              For Contact Centers
             </MenuLink>
-            <MenuLink onClick={() => navigate("/brokers")}>
-              For Brokers
+            <MenuLink onClick={() => navigate("/contactcenter")}>
+              For Financial Services
             </MenuLink>
             <MenuLink onClick={() => navigate("/about")}>About</MenuLink>
             {isLoggedIn && (
