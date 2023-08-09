@@ -3,10 +3,10 @@ import { Link } from "gatsby"
 import * as styles from "./togetherCard.module.css"
 import { Button } from "../shared"
 import { navigate } from "gatsby"
-import OrginationIcon from "../../images/components/image-products-icon-origination.png"
-import CreditIcon from "../../images/components/image-products-icon-creditai.png"
-import ServiceIcon from "../../images/components/image-products-icon-servicing.png"
-import ManagementIcon from "../../images/components/image-products-icon-management.png"
+import ContactCenterIcon from "../../images/components/image-products-callcenter.png"
+import HelpdeskIcon from "../../images/components/image-products-helpdesk.png"
+import CRMIcon from "../../images/components/image-products-crm.png"
+import OmniIcon from "../../images/components/image-products-omnichannel.png"
 
 const TogetherCard = ({ pageName }) => {
   return (
@@ -18,46 +18,28 @@ const TogetherCard = ({ pageName }) => {
           </div>
           <div id={styles.subTitle}>
             <p>
-              TaskSuite's Loan {pageName} tool is even more powerful when
-              utilized alongside our <br className={styles.breakPoint} />
-              full suite. Our all-in-one platform puts the control at your
-              fingertips.
+              TaskFlows {pageName} tools are even more powerful when utilized
+              alongside our full suite. <br className={styles.breakPoint} />
+              Our all-in-one platform puts the control at your fingertips.
             </p>
           </div>
         </div>
         <div id={styles.cardContainer}>
           <div id={styles.cardWrapper}>
-            <Link className={styles.card} to="/loanorigination">
+            <Link className={styles.card} to="/contactcenter">
               <div className={styles.cardContent}>
                 <div className={styles.iconContainer}>
                   <img
                     className={styles.icon}
-                    src={OrginationIcon}
-                    alt="Origination Icon"
+                    src={ContactCenterIcon}
+                    alt="Contact Center Icon"
                   />
                 </div>
-                <h3 className={styles.cardTitle}>ORIGINATION</h3>
+                <h3 className={styles.cardTitle}>CALL CENTER</h3>
                 <p className={styles.cardSubTitle}>
-                  Online applications,
-                  <br /> documents, credit checks, <br />
-                  verification, and more.
-                </p>
-              </div>
-            </Link>
-            <Link className={styles.card} to="/loancreditai">
-              <div className={styles.cardContent}>
-                <div className={styles.iconContainer}>
-                  <img
-                    className={styles.icon}
-                    src={CreditIcon}
-                    alt="Credit AI Icon"
-                  />
-                </div>
-                <h3 className={styles.cardTitle}>CREDIT AI</h3>
-                <p className={styles.cardSubTitle}>
-                  Seamless integration with
-                  <br /> credit bureaus for scoring
-                  <br /> and fraud protection.
+                  Streamline customer <br />
+                  communication with <br />
+                  advanced capabilites.
                 </p>
               </div>
             </Link>
@@ -66,15 +48,32 @@ const TogetherCard = ({ pageName }) => {
                 <div className={styles.iconContainer}>
                   <img
                     className={styles.icon}
-                    src={ServiceIcon}
+                    src={CRMIcon}
                     alt="Servicing Icon"
                   />
                 </div>
-                <h3 className={styles.cardTitle}>SERVICING</h3>
+                <h3 className={styles.cardTitle}>CRM</h3>
                 <p className={styles.cardSubTitle}>
-                  Cloud-based loan support
-                  <br /> for reducing risk and
-                  <br /> centralinzaing your portfolio.
+                  Centralize customer <br />
+                  relationships with intuitive <br />
+                  insights and management.
+                </p>
+              </div>
+            </Link>
+            <Link className={styles.card} to="/loancreditai">
+              <div className={styles.cardContent}>
+                <div className={styles.iconContainer}>
+                  <img
+                    className={styles.icon}
+                    src={HelpdeskIcon}
+                    alt="Credit AI Icon"
+                  />
+                </div>
+                <h3 className={styles.cardTitle}>HELPDESK</h3>
+                <p className={styles.cardSubTitle}>
+                  Elevate support with
+                  <br /> efficient tracking and
+                  <br /> and repsonsive solutions.
                 </p>
               </div>
             </Link>
@@ -83,15 +82,15 @@ const TogetherCard = ({ pageName }) => {
                 <div className={styles.iconContainer}>
                   <img
                     className={styles.icon}
-                    src={ManagementIcon}
+                    src={OmniIcon}
                     alt="Management Icon"
                   />
                 </div>
-                <h3 className={styles.cardTitle}>MANAGEMENT</h3>
+                <h3 className={styles.cardTitle}>OMNI-CHANNEL</h3>
                 <p className={styles.cardSubTitle}>
-                  Automated loan
-                  <br /> application processing, <br />
-                  tracking and reporting.
+                  Unify interactions for
+                  <br /> consistent and seamless <br />
+                  customer engagement.
                 </p>
               </div>
             </Link>
@@ -105,7 +104,7 @@ const TogetherCard = ({ pageName }) => {
             }}
             variant="blueLarge"
           >
-            <p>Explore the Suite</p>
+            <p>Explore Products</p>
           </Button>
         </div>
       </div>

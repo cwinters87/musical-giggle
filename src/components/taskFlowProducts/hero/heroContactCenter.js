@@ -1,30 +1,31 @@
 import * as React from "react"
 import { Button } from "../../shared"
 import { navigate } from "gatsby"
-import ScrollFadeInImage from "../../effects/popOutImg"
-import imgPop from "../../../images/loanSuite/pop-origination.png"
-import Image from "../../../images/loanSuite/products-origination1.png"
-import ImageMobile from "../../../images/loanSuite/products-origination-mobile.png"
+// import ScrollFadeInImage from "../../effects/popOutImg"
+// import imgPop from "../../../images/loanSuite/pop-origination.png"
+import Image from "../../../images/taskFlowProducts/contactCenter/hero-call-center.png"
+import ImageMobile from "../../../images/taskFlowProducts/contactCenter/hero-call-center.png"
 import * as styles from "./hero.module.css"
 
-const OriginationHero = () => {
+const ContactCenterHero = () => {
   return (
     <div className={styles.sectionWrapper}>
       <div className={styles.container}>
         <div className={styles.textContainer}>
           <div className={styles.middleWrapper}>
             <h2 className={styles.title}>
-              Unify and organize
-              <br className={styles.topBreakPoint} /> your entire loan
-              <br className={styles.topBreakPoint} /> origination process
+              Streamline customer <br className={styles.topBreakPoint} />
+              communication with <br className={styles.topBreakPoint} />
+              advance capabilities.
             </h2>
             <p className={styles.subTitle}>
-              TaskSuite's Loan Origination System provides lending{" "}
+              TaskFlow's cloud-based Contact Center software solution{" "}
               <br className={styles.bottomBreakPoint} />
-              companies and brokers with a powerfully unified system
-              <br className={styles.bottomBreakPoint} /> that delievers a
-              measurable boost to efficiency, accuracy,
-              <br className={styles.bottomBreakPoint} /> and reliability.
+              seamlessly connects agents and customers, empowering{" "}
+              <br className={styles.bottomBreakPoint} /> your team to deliver
+              exceptional service, every single{" "}
+              <br className={styles.bottomBreakPoint} />
+              interaction.
             </p>
             <div className={styles.imgContainerMobile}>
               <img src={ImageMobile} alt="TaskSuite Origination Product" />
@@ -32,7 +33,7 @@ const OriginationHero = () => {
           </div>
           <Button
             onClick={() => {
-              navigate("/loansuite")
+              navigate("/contactcenter")
             }}
             variant="outlined"
           >
@@ -40,7 +41,7 @@ const OriginationHero = () => {
           </Button>
         </div>
         <div className={styles.imgContainer}>
-          <ScrollFadeInImage
+          {/* <ScrollFadeInImage
             src={imgPop}
             alt="pop-out"
             style={{
@@ -50,7 +51,7 @@ const OriginationHero = () => {
               height: "100px",
               width: "auto",
             }}
-          />
+          /> */}
           <picture>
             <source media="(max-width: 991px)" srcSet={ImageMobile} />
             <source media="(min-width: 992px)" srcSet={Image} />
@@ -66,4 +67,4 @@ const OriginationHero = () => {
   )
 }
 
-export default OriginationHero
+export default ContactCenterHero

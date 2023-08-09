@@ -191,14 +191,11 @@ function NavBar() {
                   "aria-labelledby": "basic-button",
                 }}
               >
-                {/* <DropdownItem onClick={() => navigate("/loansuite")}>
-                  Loan Suite
-                </DropdownItem> */}
                 <DropdownItem onClick={() => navigate("/contactcenter")}>
-                  Contact Center Solution
+                  Contact Center Software
                 </DropdownItem>
                 <DropdownItem onClick={() => navigate("/helpdesk")}>
-                  Helpdesk Solution
+                  Helpdesk
                 </DropdownItem>
                 <DropdownItem onClick={() => navigate("/crm")}>
                   CRM
@@ -294,14 +291,11 @@ function NavBar() {
                 </MenuLink>
               </AccordionSummary>
               <AccordionDetails>
-                {/* <MenuLink onClick={() => navigate("/loansuite")}>
-                  Loan Suite
-                </MenuLink> */}
                 <MenuLink onClick={() => navigate("/contactcenter")}>
-                  Contact Center Solution
+                  Contact Center Software
                 </MenuLink>
                 <MenuLink onClick={() => navigate("/helpdesk")}>
-                  Helpdesk Solution
+                  Helpdesk
                 </MenuLink>
                 <MenuLink onClick={() => navigate("/crm")}>CRM</MenuLink>
                 <MenuLink onClick={() => navigate("/omnichannel")}>

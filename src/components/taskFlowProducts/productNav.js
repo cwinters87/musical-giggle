@@ -1,41 +1,41 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import OrgIcon from "../../images/components/icon-products-origination.png"
-import CreditIcon from "../../images/components/icon-products-creditai.png"
-import ServIcon from "../../images/components/icon-products-servicing.png"
-import MgmtIcon from "../../images/components/icon-products-management.png"
+import CCIcon from "../../images/components/icon-tab-callcenter.png"
+import HDIcon from "../../images/components/icon-tab-helpdesk.png"
+import CRMIcon from "../../images/components/icon-tab-crm.png"
+import OCIcon from "../../images/components/icon-tab-omnichannel.png"
 import * as styles from "./productNav.module.css"
 
 const ProductNav = () => {
   return (
     <div className={styles.sectionWrapper}>
       <div className={styles.container}>
-        <Link className={styles.link} to="/loanorigination">
+        <Link className={styles.link} to="/contactcenter">
           <div className={styles.imgContainer}>
-            <img src={OrgIcon} alt="Orgination Icon" />
+            <img src={CCIcon} alt="Call Center Icon" />
           </div>
-          <h3 className={styles.linkTitle}>ORIGINATION</h3>
+          <h3 className={styles.linkTitle}>Call Center</h3>
         </Link>
 
-        <Link className={styles.link} to="/loancreditai">
+        <Link className={styles.link} to="/contactcenter">
           <div className={styles.imgContainer}>
-            <img src={CreditIcon} alt="Credit AI Icon" />
+            <img src={HDIcon} alt="Helpdesk Icon" />
           </div>
-          <h3 className={styles.linkTitle}>CREDIT AI</h3>
+          <h3 className={styles.linkTitle}>Helpdesk</h3>
         </Link>
 
-        <Link className={styles.link} to="/loanservicing">
+        <Link className={styles.link} to="/contactcenter">
           <div className={styles.imgContainer}>
-            <img src={ServIcon} alt="Servicing Icon" />
+            <img src={CRMIcon} alt="CRM Icon" />
           </div>
-          <h3 className={styles.linkTitle}>SERVICING</h3>
+          <h3 className={styles.linkTitle}>CRM</h3>
         </Link>
 
-        <Link className={styles.link} to="/loanmanagement">
+        <Link className={styles.link} to="/contactcenter">
           <div className={styles.imgContainer}>
-            <img src={MgmtIcon} alt="Manament Icon" />
+            <img src={OCIcon} alt="Omni-Channel Icon" />
           </div>
-          <h3 className={styles.linkTitle}>MANAGEMENT</h3>
+          <h3 className={styles.linkTitle}>Omni-Channel</h3>
         </Link>
       </div>
     </div>

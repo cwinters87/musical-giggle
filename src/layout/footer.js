@@ -26,12 +26,12 @@ const Footer = () => {
               <ul className={styles.list}>
                 <li>
                   <Link className={styles.link} to="/contactcenter">
-                    Contact Center Solution
+                    Contact Center Software
                   </Link>
                 </li>
                 <li>
                   <Link className={styles.link} to="/helpdesk">
-                    Helpdesk Solution
+                    Helpdesk
                   </Link>
                 </li>
                 <li>

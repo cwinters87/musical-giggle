@@ -1,42 +1,38 @@
 import * as React from "react"
 import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
-// import ProductNav from "../components/loanProducts/productNav"
-// import ManagementHero from "../components/loanProducts/hero/heroManagement"
-// import DemoFormCard from "../components/demoForm/demoFormCard"
-// import FadeInFromBottom from "../components/effects/fadeInFromBottom"
-// import FadeInFromLeft from "../components/effects/fadeInFromLeft"
-// import BenefitsManagementCard from "../components/loanProducts/benefits/benefitsManagement"
-// import DynamicProductCard from "../components/loanProducts/productCard"
-// import DynamicProductCardReverse from "../components/loanProducts/productCardReverse"
-// import ManagementImg from "../images/loanProducts/management/image-management-portal.png"
-// import ReportingImg from "../images/loanProducts/management/image-management-reporting.png"
-// import SecurityImg from "../images/loanProducts/management/image-management-security.png"
-// import IntegrationsImg from "../images/loanProducts/management/image-management-integrations.png"
-// import TogetherCard from "../components/loanProducts/togetherCard"
-// import ManagementFeaturesCard from "../components/loanProducts/features/managementFeatures"
-import ComingSoonCard from "../components/comingSoon"
+import ProductNav from "../components/taskFlowProducts/productNav"
+import ContactCenterHero from "../components/taskFlowProducts/hero/heroContactCenter"
+import DemoFormCard from "../components/demoForm/demoFormCard"
+import FadeInFromBottom from "../components/effects/fadeInFromBottom"
+import FadeInFromLeft from "../components/effects/fadeInFromLeft"
+import BenefitsContactCenter from "../components/taskFlowProducts/benefits/benefitsContactCenter"
+import DynamicProductCard from "../components/taskFlowProducts/productCard"
+import DynamicProductCardReverse from "../components/taskFlowProducts/productCardReverse"
+import ManagementImg from "../images/taskFlowProducts/management/image-management-portal.png"
+import ReportingImg from "../images/taskFlowProducts/management/image-management-reporting.png"
+import SecurityImg from "../images/taskFlowProducts/management/image-management-security.png"
+import IntegrationsImg from "../images/taskFlowProducts/management/image-management-integrations.png"
+import TogetherCard from "../components/taskFlowProducts/togetherCard"
+import FeaturesContactCenterCard from "../components/taskFlowProducts/features/featuresContactCenter"
 
 const ContactCenter = () => {
   return (
     <Layout>
-      <ComingSoonCard />
-      {/* <ProductNav />
+      <ProductNav />
 
-      <ManagementHero />
+      <ContactCenterHero />
 
       <FadeInFromBottom>
-        <BenefitsManagementCard />
+        <BenefitsContactCenter />
       </FadeInFromBottom>
 
       <FadeInFromLeft>
         <DynamicProductCard
-          headerTitle={"Online Borrower Portal"}
-          cardTitle={
-            "Secure white-labeled portal for borrowers to access loan information"
-          }
+          headerTitle={"Omni-Channel Support"}
+          cardTitle={"Integrate all platforms"}
           cardSubTitle={
-            "Empower your clients to effortlessly access loan details, make payments, and apply for new loans, all within a seamless branded experience."
+            "Enabling seamless communication across various channels like voice, email, SMS, web chat, and social media."
           }
           Img={ManagementImg}
         />
@@ -44,12 +40,10 @@ const ContactCenter = () => {
 
       <FadeInFromBottom>
         <DynamicProductCardReverse
-          headerTitle={"Intelligent Reporting"}
-          cardTitle={
-            "Real-time loan tracking and reporting that surfaces the data you need"
-          }
+          headerTitle={"Automatic Call Distributor (ACD)"}
+          cardTitle={"Intelligent call routing"}
           cardSubTitle={
-            "Unlock powerful insights with Intelligent Reporting, delivering essential data for informed decision-making."
+            "Intelligent routing of incoming calls to the appropiate agents based on predifined criteria."
           }
           Img={ReportingImg}
         />
@@ -57,12 +51,10 @@ const ContactCenter = () => {
 
       <FadeInFromLeft>
         <DynamicProductCard
-          headerTitle={"Data Security"}
-          cardTitle={
-            "Advanced security features to ensure complete data protection, always"
-          }
+          headerTitle={"Predictive Dialing"}
+          cardTitle={"Reduce abandoned calls"}
           cardSubTitle={
-            "Experience peace of mind with Data Security, offering advanced features for comprehensive protection of sensitive information at all times"
+            "Automated dialing system that uses algorithms to minimize agent idle time and reduce call abandonment."
           }
           Img={SecurityImg}
         />
@@ -70,28 +62,26 @@ const ContactCenter = () => {
 
       <FadeInFromBottom>
         <DynamicProductCardReverse
-          headerTitle={"Robust Integrations"}
-          cardTitle={
-            "Integration with credit reporting, document scanning, and other tools"
-          }
+          headerTitle={"Real-Time Reporting and Analytics"}
+          cardTitle={"Track everything"}
           cardSubTitle={
-            "Enhance your workflow by effortlessly connecting to vital tools for streamlined loan operations."
+            "Comprehensive dashboards and analytics tools that provide insights into key performance indicators (KPIs), including call abandonment rates, average speed of answer, first call resolutions, etc."
           }
           Img={IntegrationsImg}
         />
       </FadeInFromBottom>
 
       <FadeInFromLeft>
-        <ManagementFeaturesCard />
+        <FeaturesContactCenterCard />
       </FadeInFromLeft>
 
       <FadeInFromBottom>
-        <TogetherCard pageName={"Management"} />
+        <TogetherCard pageName={"Contact Center Software"} />
       </FadeInFromBottom>
 
       <FadeInFromBottom>
         <DemoFormCard />
-      </FadeInFromBottom> */}
+      </FadeInFromBottom>
     </Layout>
   )
 }
