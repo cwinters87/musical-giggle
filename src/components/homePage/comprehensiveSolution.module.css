@@ -173,7 +173,7 @@
 
 @media only screen and (max-width: 600px) {
   .container {
-    height: 190svh;
+    height: 180svh;
   }
   #titleContainer h2 {
     font-size: 2.5rem;
