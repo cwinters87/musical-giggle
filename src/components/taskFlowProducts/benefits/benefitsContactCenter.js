@@ -2,7 +2,7 @@ import * as React from "react"
 import imageOne from "../../../images/taskFlowProducts/contactCenter/icon-flexibility.png"
 import imageTwo from "../../../images/taskFlowProducts/contactCenter/icon-savings.png"
 import imageThree from "../../../images/taskFlowProducts/contactCenter/icon-experience.png"
-import imageFour from "../../../images/taskFlowProducts/contactCenter/icon-Integration.png"
+import imageFour from "../../../images/taskFlowProducts/contactCenter/icon-integration.png"
 import imageFive from "../../../images/taskFlowProducts/contactCenter/icon-productivity.png"
 import * as styles from "./benefitsContactCenter.module.css"
 
