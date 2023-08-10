@@ -17,7 +17,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <Hero />
-
       <FadeInFromBottom>
         <ComprehensiveSolutionCard />
       </FadeInFromBottom>

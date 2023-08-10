@@ -15,7 +15,7 @@ import {
 import { ThemeProvider, createTheme } from "@mui/material/styles"
 import { Link, navigate } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import React, { useContext, useState } from "react"
+import React, { useContext, useState, useEffect } from "react"
 import { Button } from "../components/shared"
 import { AuthContext } from "../utils/context/AuthContext"
 
@@ -43,7 +43,7 @@ const theme = createTheme({
       styleOverrides: {
         paper: {
           backgroundColor: "var(--khaki-light)",
-          top: "55px !important",
+          // top: value,
           boxShadow: "none",
           border: "1px solid var(--money-green)",
           color: "var(--money-green)",
@@ -59,7 +59,7 @@ const theme = createTheme({
     MuiDrawer: {
       styleOverrides: {
         root: {
-          fontFamily: "var(--font-ligth)",
+          fontFamily: "var(--font-light)",
           "@media (min-width: 1201px)": {
             display: "none",
           },
@@ -114,6 +114,7 @@ const theme = createTheme({
 })
 
 function NavBar() {
+  const [value, setValue] = useState("90 !important")
   const [sideBarOpen, setSideBarOpen] = useState(false)
   const [anchorEl, setAnchorEl] = useState(null)
   const [anchorElAccount, setAnchorElAccount] = useState(null)
@@ -123,6 +124,25 @@ function NavBar() {
   const isLoggedIn = authContext?.isLoggedIn
   const open = Boolean(anchorEl)
   const openAccount = Boolean(anchorElAccount)
+
+  const handleScroll = () => {
+    // Check scroll position
+    if (window.scrollY > 0) {
+      setValue("55 !important")
+    } else {
+      setValue("90 !important")
+    }
+  }
+
+  useEffect(() => {
+    // Attach the scroll event listener
+    window.addEventListener("scroll", handleScroll)
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   const handleLogout = () => {
     if (typeof logOut === "function") {
@@ -157,53 +177,160 @@ function NavBar() {
   }
 
   return (
-    <ThemeProvider theme={theme}>
-      <AppBar>
-        <Toolbar>
-          <ToolBox>
-            <Logo>
-              <Link to="/">
-                <StaticImage
-                  src="../images/navbar/nav-tasksuite-logo.png"
-                  placeholder="blurred"
-                  alt="tasksuite logo"
-                />
-              </Link>
-            </Logo>
-            <BurgerMenu
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleSideBar}
-            >
-              <BurgerIcon />
-            </BurgerMenu>
-            <MenuGroup>
-              <MenuLink onClick={handleDropdown} className={open ? "open" : ""}>
-                <p>Products</p>
-                <ChevronIcon />
-              </MenuLink>
-              <Dropdown
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleDropdownClose}
-                MenuListProps={{
-                  "aria-labelledby": "basic-button",
-                }}
+    <>
+      <ThemeProvider theme={theme}>
+        {/* <TopBanner /> */}
+
+        <AppBar position="sticky">
+          <Toolbar>
+            <ToolBox>
+              <Logo>
+                <Link to="/">
+                  <StaticImage
+                    src="../images/navbar/nav-tasksuite-logo.png"
+                    placeholder="blurred"
+                    alt="tasksuite logo"
+                  />
+                </Link>
+              </Logo>
+              <BurgerMenu
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleSideBar}
               >
-                <DropdownItem onClick={() => navigate("/contactcenter")}>
-                  Contact Center Software
-                </DropdownItem>
-                <DropdownItem onClick={() => navigate("/helpdesk")}>
-                  Helpdesk
-                </DropdownItem>
-                <DropdownItem onClick={() => navigate("/crm")}>
-                  CRM
-                </DropdownItem>
-                <DropdownItem onClick={() => navigate("/omnichannel")}>
-                  Omni-Channel Communication
-                </DropdownItem>
-              </Dropdown>
+                <BurgerIcon />
+              </BurgerMenu>
+              <MenuGroup>
+                <MenuLink
+                  onClick={handleDropdown}
+                  className={open ? "open" : ""}
+                >
+                  <p>Products</p>
+                  <ChevronIcon />
+                </MenuLink>
+                <Dropdown
+                  id="basic-menu"
+                  anchorEl={anchorEl}
+                  open={open}
+                  onClose={handleDropdownClose}
+                  MenuListProps={{
+                    "aria-labelledby": "basic-button",
+                  }}
+                  anchorOrigin={{ vertical: "bottom" }}
+                  style={{ top: value }}
+                >
+                  <DropdownItem onClick={() => navigate("/contactcenter")}>
+                    Contact Center Software
+                  </DropdownItem>
+                  <DropdownItem onClick={() => navigate("/helpdesk")}>
+                    Helpdesk
+                  </DropdownItem>
+                  <DropdownItem onClick={() => navigate("/crm")}>
+                    CRM
+                  </DropdownItem>
+                  <DropdownItem onClick={() => navigate("/omnichannel")}>
+                    Omni-Channel Communication
+                  </DropdownItem>
+                </Dropdown>
+                <MenuLink onClick={() => navigate("/contactcenter")}>
+                  For Contact Centers
+                </MenuLink>
+                <MenuLink onClick={() => navigate("/contactcenter")}>
+                  For Financial Services
+                </MenuLink>
+                <MenuLink onClick={() => navigate("/about")}>About</MenuLink>
+              </MenuGroup>
+              <MenuGroup>
+                <Button
+                  onClick={() => {
+                    navigate("/contact")
+                  }}
+                >
+                  <p>Request a demo</p>
+                </Button>
+                <Divider />
+                {isLoggedIn ? (
+                  <MenuGroup>
+                    <MenuLink
+                      onClick={handleDropdownAccount}
+                      className={openAccount ? "open" : ""}
+                    >
+                      <p>Account</p>
+                      <ChevronIcon />
+                    </MenuLink>
+                    <Dropdown
+                      id="account-menu"
+                      anchorEl={anchorElAccount}
+                      open={openAccount}
+                      onClose={handleDropdownCloseAccount}
+                      MenuListProps={{
+                        "aria-labelledby": "basic-button",
+                      }}
+                    >
+                      <DropdownItem onClick={() => navigate("/dashboard")}>
+                        Dashboard
+                      </DropdownItem>
+                      <DropdownItem onClick={handleLogout}>Logout</DropdownItem>
+                    </Dropdown>
+                  </MenuGroup>
+                ) : (
+                  <MenuLink onClick={() => navigate("/login")}>Login</MenuLink>
+                )}
+              </MenuGroup>
+            </ToolBox>
+          </Toolbar>
+        </AppBar>
+        <SwipeableDrawer
+          anchor="right"
+          variant="temporary"
+          open={sideBarOpen}
+          onClose={handleSideBar}
+          ModalProps={{
+            keepMounted: true,
+          }}
+        >
+          <SideBar>
+            <TopBar>
+              <Logo>
+                <Link to="/">
+                  <StaticImage
+                    src="../images/navbar/nav-tasksuite-logo.png"
+                    placeholder="blurred"
+                    alt="tasksuite logo"
+                  />
+                </Link>
+              </Logo>
+              <IconButton onClick={handleSideBar}>
+                <CloseIcon />
+              </IconButton>
+            </TopBar>
+            <SideBarMenus>
+              <Accordion
+                expanded={expanded === "products"}
+                onChange={handleAccordion("products")}
+              >
+                <AccordionSummary
+                  aria-controls="products-content"
+                  id="products-accoridion"
+                >
+                  <MenuLink className={expanded === "products" ? "open" : ""}>
+                    <p>Products</p>
+                    <ChevronIcon />
+                  </MenuLink>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <MenuLink onClick={() => navigate("/contactcenter")}>
+                    Contact Center Software
+                  </MenuLink>
+                  <MenuLink onClick={() => navigate("/helpdesk")}>
+                    Helpdesk
+                  </MenuLink>
+                  <MenuLink onClick={() => navigate("/crm")}>CRM</MenuLink>
+                  <MenuLink onClick={() => navigate("/omnichannel")}>
+                    Omni-Channel Communication
+                  </MenuLink>
+                </AccordionDetails>
+              </Accordion>
               <MenuLink onClick={() => navigate("/contactcenter")}>
                 For Contact Centers
               </MenuLink>
@@ -211,8 +338,16 @@ function NavBar() {
                 For Financial Services
               </MenuLink>
               <MenuLink onClick={() => navigate("/about")}>About</MenuLink>
-            </MenuGroup>
-            <MenuGroup>
+              {isLoggedIn && (
+                <MenuLink onClick={() => navigate("/dashboard")}>
+                  Dashboard
+                </MenuLink>
+              )}
+              <MenuLink
+                onClick={isLoggedIn ? handleLogout : () => navigate("/login")}
+              >
+                {isLoggedIn ? "Logout" : "Login"}
+              </MenuLink>
               <Button
                 onClick={() => {
                   navigate("/contact")
@@ -220,117 +355,11 @@ function NavBar() {
               >
                 <p>Request a demo</p>
               </Button>
-              <Divider />
-              {isLoggedIn ? (
-                <MenuGroup>
-                  <MenuLink
-                    onClick={handleDropdownAccount}
-                    className={openAccount ? "open" : ""}
-                  >
-                    <p>Account</p>
-                    <ChevronIcon />
-                  </MenuLink>
-                  <Dropdown
-                    id="account-menu"
-                    anchorEl={anchorElAccount}
-                    open={openAccount}
-                    onClose={handleDropdownCloseAccount}
-                    MenuListProps={{
-                      "aria-labelledby": "basic-button",
-                    }}
-                  >
-                    <DropdownItem onClick={() => navigate("/dashboard")}>
-                      Dashboard
-                    </DropdownItem>
-                    <DropdownItem onClick={handleLogout}>Logout</DropdownItem>
-                  </Dropdown>
-                </MenuGroup>
-              ) : (
-                <MenuLink onClick={() => navigate("/login")}>Login</MenuLink>
-              )}
-            </MenuGroup>
-          </ToolBox>
-        </Toolbar>
-      </AppBar>
-      <SwipeableDrawer
-        anchor="right"
-        variant="temporary"
-        open={sideBarOpen}
-        onClose={handleSideBar}
-        ModalProps={{
-          keepMounted: true,
-        }}
-      >
-        <SideBar>
-          <TopBar>
-            <Logo>
-              <Link to="/">
-                <StaticImage
-                  src="../images/navbar/nav-tasksuite-logo.png"
-                  placeholder="blurred"
-                  alt="tasksuite logo"
-                />
-              </Link>
-            </Logo>
-            <IconButton onClick={handleSideBar}>
-              <CloseIcon />
-            </IconButton>
-          </TopBar>
-          <SideBarMenus>
-            <Accordion
-              expanded={expanded === "products"}
-              onChange={handleAccordion("products")}
-            >
-              <AccordionSummary
-                aria-controls="products-content"
-                id="products-accoridion"
-              >
-                <MenuLink className={expanded === "products" ? "open" : ""}>
-                  <p>Products</p>
-                  <ChevronIcon />
-                </MenuLink>
-              </AccordionSummary>
-              <AccordionDetails>
-                <MenuLink onClick={() => navigate("/contactcenter")}>
-                  Contact Center Software
-                </MenuLink>
-                <MenuLink onClick={() => navigate("/helpdesk")}>
-                  Helpdesk
-                </MenuLink>
-                <MenuLink onClick={() => navigate("/crm")}>CRM</MenuLink>
-                <MenuLink onClick={() => navigate("/omnichannel")}>
-                  Omni-Channel Communication
-                </MenuLink>
-              </AccordionDetails>
-            </Accordion>
-            <MenuLink onClick={() => navigate("/contactcenter")}>
-              For Contact Centers
-            </MenuLink>
-            <MenuLink onClick={() => navigate("/contactcenter")}>
-              For Financial Services
-            </MenuLink>
-            <MenuLink onClick={() => navigate("/about")}>About</MenuLink>
-            {isLoggedIn && (
-              <MenuLink onClick={() => navigate("/dashboard")}>
-                Dashboard
-              </MenuLink>
-            )}
-            <MenuLink
-              onClick={isLoggedIn ? handleLogout : () => navigate("/login")}
-            >
-              {isLoggedIn ? "Logout" : "Login"}
-            </MenuLink>
-            <Button
-              onClick={() => {
-                navigate("/contact")
-              }}
-            >
-              <p>Request a demo</p>
-            </Button>
-          </SideBarMenus>
-        </SideBar>
-      </SwipeableDrawer>
-    </ThemeProvider>
+            </SideBarMenus>
+          </SideBar>
+        </SwipeableDrawer>
+      </ThemeProvider>
+    </>
   )
 }
 
