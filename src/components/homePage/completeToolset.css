@@ -1,0 +1,92 @@
+.card {
+  width: 225px;
+  height: 225px;
+  text-decoration: none;
+  color: var(--secondary-font-color);
+  background-color: var(--money-green);
+  border: solid 1px var(--money-green);
+  border-radius: 18px;
+}
+
+.card:hover {
+  transition: 250ms;
+  border: solid 1px var(--lime-green);
+  border-radius: 18px;
+  cursor: pointer;
+  color: var(--secondary-font-color);
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+}
+
+.cardContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cardContent:hover h3 {
+  transition: 250ms;
+  color: var(--lime-green);
+}
+
+.cardTitle {
+  margin: 0;
+  text-align: center;
+  font-family: var(--font-regular);
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 2561px) {
+  .card {
+    width: 300px;
+    height: 300px;
+  }
+  .cardTitle {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 1921px) {
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+  .cardTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    width: 180px;
+    height: 180px;
+  }
+  .cardTitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .card {
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+  }
+  .cardTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cardTitle {
+    font-size: 1.2rem;
+  }
+}

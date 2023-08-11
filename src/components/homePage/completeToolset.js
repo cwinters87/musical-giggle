@@ -1,32 +1,53 @@
-import React, { useEffect } from "react"
+import React, { useRef } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Image from "../../images/homePage/completeToolset.png"
 import ImageMobile from "../../images/homePage/completeToolsetMobile.png"
+import testImg from "../../images/homePage/icon-intro-callcenter-active.png"
 import * as styles from "./completeToolset.module.css"
 
 const CompleteToolsetCard = () => {
-  // not working yet
-  useEffect(() => {
-    const links = document.querySelectorAll("#cardWrapper > a")
+  const firstCardIcon = useRef(null)
+  let timeoutId
 
-    links.forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault()
-
-        const activeLink = document.querySelector(`.${styles.active}`)
-        activeLink.classList.remove(styles.active)
-
-        link.classList.add(styles.active)
-      })
-    })
-
-    return () => {
-      links.forEach((link) => {
-        link.removeEventListener("click")
-      })
+  // Apply grayscale filter to the first card after a delay
+  const applyDelayedGrayscale = () => {
+    if (timeoutId) {
+      clearTimeout(timeoutId)
     }
-  }, [])
+    timeoutId = setTimeout(() => {
+      if (firstCardIcon.current) {
+        firstCardIcon.current.style.filter = "grayscale(0%) opacity(1)"
+      }
+    }, 1100)
+  }
+
+  // Handle mouse enter for the first card
+  const handleFirstCardMouseEnter = () => {
+    if (timeoutId) {
+      clearTimeout(timeoutId) // Clear any existing timeout
+    }
+    if (firstCardIcon.current) {
+      firstCardIcon.current.style.filter = "grayscale(0%) opacity(1)"
+    }
+  }
+
+  // Handle mouse leave for the first card
+  const handleFirstCardMouseLeave = () => {
+    applyDelayedGrayscale()
+  }
+
+  // Handle mouse enter for the other cards
+  const handleMouseEnter = () => {
+    if (firstCardIcon.current) {
+      firstCardIcon.current.style.filter = "grayscale(100%) opacity(0.5)"
+    }
+  }
+
+  // Handle mouse leave for the other cards
+  const handleMouseLeave = () => {
+    applyDelayedGrayscale()
+  }
 
   return (
     <>
@@ -53,52 +74,79 @@ const CompleteToolsetCard = () => {
             <div id={styles.cardWrapper}>
               <Link
                 className={styles.card}
-                id={styles.active}
                 to="/contactcenter"
+                onMouseEnter={handleFirstCardMouseEnter}
+                onMouseLeave={handleFirstCardMouseLeave}
               >
                 <div className={styles.cardContent}>
-                  <StaticImage
+                  <img
+                    src={testImg}
+                    ref={firstCardIcon}
+                    className={styles.icon}
+                    id={styles.iconOne}
+                  />
+                  {/* <StaticImage
+                    ref={firstCardIcon}
                     src="../../images/homePage/icon-intro-callcenter-active.png"
                     placeholder=""
                     alt="icon"
                     transformOptions={{ fit: "contain" }}
                     height={100}
-                  />
+                    className={styles.icon}
+                  /> */}
                   <h3 className={styles.cardTitle}>Contact Center</h3>
                 </div>
               </Link>
-              <Link className={styles.card} to="/crm">
+              <Link
+                className={styles.card}
+                to="/crm"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
                 <div className={styles.cardContent}>
                   <StaticImage
-                    src="../../images/homePage/icon-intro-crm-inactive.png"
+                    src="../../images/homePage/icon-intro-crm-active.png"
                     placeholder=""
                     alt="icon"
                     transformOptions={{ fit: "contain" }}
                     height={100}
+                    className={styles.icon}
                   />
                   <h3 className={styles.cardTitle}>CRM</h3>
                 </div>
               </Link>
-              <Link className={styles.card} to="/helpdesk">
+              <Link
+                className={styles.card}
+                to="/helpdesk"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
                 <div className={styles.cardContent}>
                   <StaticImage
-                    src="../../images/homePage/icon-intro-helpdesk-inactive.png"
+                    src="../../images/homePage/icon-intro-helpdesk-active.png"
                     placeholder=""
                     alt="icon"
                     transformOptions={{ fit: "contain" }}
                     height={100}
+                    className={styles.icon}
                   />
                   <h3 className={styles.cardTitle}>Helpdesk</h3>
                 </div>
               </Link>
-              <Link className={styles.card} to="/omnichannel">
+              <Link
+                className={styles.card}
+                to="/omnichannel"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
                 <div className={styles.cardContent}>
                   <StaticImage
-                    src="../../images/homePage/icon-intro-omni-inactive.png"
+                    src="../../images/homePage/icon-intro-omni-active.png"
                     placeholder=""
                     alt="icon"
                     transformOptions={{ fit: "contain" }}
                     height={100}
+                    className={styles.icon}
                   />
                   <h3 className={styles.cardTitle}>Omni-Channel</h3>
                 </div>

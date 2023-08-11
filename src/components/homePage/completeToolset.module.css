@@ -127,6 +127,18 @@
   font-size: 0.85rem;
 }
 
+.icon {
+  filter: grayscale(100%) opacity(0.5);
+}
+
+.card:first-of-type .icon {
+  filter: grayscale(0%) opacity(1);
+}
+
+.card:hover .icon {
+  filter: grayscale(0%) opacity(1);
+}
+
 #imgContainer {
   height: 52%;
   width: 100%;
