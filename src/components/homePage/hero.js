@@ -4,11 +4,13 @@ import ImageMobile from "../../images/homePage/Hero-Mobile.png"
 import * as styles from "./hero.module.css"
 import { Button } from "../shared"
 import { navigate } from "gatsby"
+import DownArrow from "../effects/downArrow"
 
 const Hero = () => {
   return (
     <div className={styles.sectionWrapper}>
       <main className={styles.container}>
+        <DownArrow />
         <div className={styles.imgWrapper}>
           <div className={styles.imgContainer}>
             <picture>

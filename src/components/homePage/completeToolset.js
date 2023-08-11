@@ -19,7 +19,7 @@ const CompleteToolsetCard = () => {
       if (firstCardIcon.current) {
         firstCardIcon.current.style.filter = "grayscale(0%) opacity(1)"
       }
-    }, 1100)
+    }, 5000)
   }
 
   // Handle mouse enter for the first card
@@ -83,7 +83,7 @@ const CompleteToolsetCard = () => {
                     src={testImg}
                     ref={firstCardIcon}
                     className={styles.icon}
-                    id={styles.iconOne}
+                    alt="Contact Center Icon"
                   />
                   {/* <StaticImage
                     ref={firstCardIcon}
