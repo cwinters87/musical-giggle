@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { useMediaQuery } from "react-responsive"
 import ScrollFadeInImage from "../effects/popOutImg"
 import Image from "../../images/demo/contact-page-hero.png"
-import popImg from "../../images/demo/pop-contact-1.png"
+import popImg from "../../images/demo/pop-demo.png"
 import ImageMobile from "../../images/demo/contact-page-hero-mobile.png"
 import DemoForm from "./demoForm"
 import * as styles from "./demoFormFullPage.module.css"
@@ -25,6 +25,8 @@ const DemoFormFullPageCard = () => {
                       src="../../images/components/check.png"
                       placeholder=""
                       alt="checkmark"
+                      transformOptions={{ fit: "contain" }}
+                      height={20}
                     />
                   </div>
                   <p>Simpler & Faster Workflows</p>
@@ -35,6 +37,8 @@ const DemoFormFullPageCard = () => {
                       src="../../images/components/check.png"
                       placeholder=""
                       alt="checkmark"
+                      transformOptions={{ fit: "contain" }}
+                      height={20}
                     />
                   </div>
                   <p>More efficient & trackable teams</p>
@@ -45,6 +49,8 @@ const DemoFormFullPageCard = () => {
                       src="../../images/components/check.png"
                       placeholder=""
                       alt="checkmark"
+                      transformOptions={{ fit: "contain" }}
+                      height={20}
                     />
                   </div>
                   <p>Customizable & adaptable solution</p>

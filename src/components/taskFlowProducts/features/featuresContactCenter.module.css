@@ -107,6 +107,7 @@
   color: var(--secondary-font-color);
   filter: brightness(90%);
   text-align: center;
+  padding: 0 15%;
   /* border: solid 2px white; */
 }
 
@@ -121,6 +122,12 @@
   }
   .wrapper {
     height: 80%;
+  }
+}
+
+@media only screen and (min-width: 1921px) {
+  .cardSubTitle {
+    padding: 0 22%;
   }
 }
 

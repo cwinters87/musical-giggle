@@ -54,7 +54,7 @@ const CompleteToolsetCard = () => {
               <Link
                 className={styles.card}
                 id={styles.active}
-                to="/loanorigination"
+                to="/contactcenter"
               >
                 <div className={styles.cardContent}>
                   <StaticImage
@@ -64,10 +64,10 @@ const CompleteToolsetCard = () => {
                     transformOptions={{ fit: "contain" }}
                     height={100}
                   />
-                  <h3 className={styles.cardTitle}>Call Center</h3>
+                  <h3 className={styles.cardTitle}>Contact Center</h3>
                 </div>
               </Link>
-              <Link className={styles.card} to="/loancreditai">
+              <Link className={styles.card} to="/crm">
                 <div className={styles.cardContent}>
                   <StaticImage
                     src="../../images/homePage/icon-intro-crm-inactive.png"
@@ -79,7 +79,7 @@ const CompleteToolsetCard = () => {
                   <h3 className={styles.cardTitle}>CRM</h3>
                 </div>
               </Link>
-              <Link className={styles.card} to="/loanservicing">
+              <Link className={styles.card} to="/helpdesk">
                 <div className={styles.cardContent}>
                   <StaticImage
                     src="../../images/homePage/icon-intro-helpdesk-inactive.png"
@@ -91,7 +91,7 @@ const CompleteToolsetCard = () => {
                   <h3 className={styles.cardTitle}>Helpdesk</h3>
                 </div>
               </Link>
-              <Link className={styles.card} to="/loanmanagement">
+              <Link className={styles.card} to="/omnichannel">
                 <div className={styles.cardContent}>
                   <StaticImage
                     src="../../images/homePage/icon-intro-omni-inactive.png"

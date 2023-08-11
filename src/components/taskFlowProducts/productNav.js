@@ -17,21 +17,21 @@ const ProductNav = () => {
           <h3 className={styles.linkTitle}>Call Center</h3>
         </Link>
 
-        <Link className={styles.link} to="/contactcenter">
+        <Link className={styles.link} to="/helpdesk">
           <div className={styles.imgContainer}>
             <img src={HDIcon} alt="Helpdesk Icon" />
           </div>
           <h3 className={styles.linkTitle}>Helpdesk</h3>
         </Link>
 
-        <Link className={styles.link} to="/contactcenter">
+        <Link className={styles.link} to="/crm">
           <div className={styles.imgContainer}>
             <img src={CRMIcon} alt="CRM Icon" />
           </div>
           <h3 className={styles.linkTitle}>CRM</h3>
         </Link>
 
-        <Link className={styles.link} to="/contactcenter">
+        <Link className={styles.link} to="/omnichannel">
           <div className={styles.imgContainer}>
             <img src={OCIcon} alt="Omni-Channel Icon" />
           </div>

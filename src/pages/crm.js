@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
-// import ProductNav from "../components/loanProducts/productNav"
+import ProductNav from "../components/taskFlowProducts/productNav"
 // import ManagementHero from "../components/loanProducts/hero/heroManagement"
 // import DemoFormCard from "../components/demoForm/demoFormCard"
 // import FadeInFromBottom from "../components/effects/fadeInFromBottom"
@@ -20,8 +20,10 @@ import ComingSoonCard from "../components/comingSoon"
 const CRM = () => {
   return (
     <Layout>
+      <ProductNav />
       <ComingSoonCard />
-      {/* <ProductNav />
+
+      {/* 
 
       <ManagementHero />
 

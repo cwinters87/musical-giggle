@@ -43,14 +43,10 @@ const TogetherCard = ({ pageName }) => {
                 </p>
               </div>
             </Link>
-            <Link className={styles.card} to="/loanservicing">
+            <Link className={styles.card} to="/crm">
               <div className={styles.cardContent}>
                 <div className={styles.iconContainer}>
-                  <img
-                    className={styles.icon}
-                    src={CRMIcon}
-                    alt="Servicing Icon"
-                  />
+                  <img className={styles.icon} src={CRMIcon} alt="CRM Icon" />
                 </div>
                 <h3 className={styles.cardTitle}>CRM</h3>
                 <p className={styles.cardSubTitle}>
@@ -60,13 +56,13 @@ const TogetherCard = ({ pageName }) => {
                 </p>
               </div>
             </Link>
-            <Link className={styles.card} to="/loancreditai">
+            <Link className={styles.card} to="/helpdesk">
               <div className={styles.cardContent}>
                 <div className={styles.iconContainer}>
                   <img
                     className={styles.icon}
                     src={HelpdeskIcon}
-                    alt="Credit AI Icon"
+                    alt="Helpdesk Icon"
                   />
                 </div>
                 <h3 className={styles.cardTitle}>HELPDESK</h3>
@@ -77,13 +73,13 @@ const TogetherCard = ({ pageName }) => {
                 </p>
               </div>
             </Link>
-            <Link className={styles.card} to="/loanmanagement">
+            <Link className={styles.card} to="/omnichannel">
               <div className={styles.cardContent}>
                 <div className={styles.iconContainer}>
                   <img
                     className={styles.icon}
                     src={OmniIcon}
-                    alt="Management Icon"
+                    alt="Omni-Channel Icon"
                   />
                 </div>
                 <h3 className={styles.cardTitle}>OMNI-CHANNEL</h3>
