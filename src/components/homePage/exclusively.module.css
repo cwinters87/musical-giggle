@@ -154,6 +154,9 @@
 }
 
 @media only screen and (max-width: 991px) {
+  .sectionWrapper {
+    height: 105vh;
+  }
   .iconWrapper {
     height: 45px;
   }
@@ -191,5 +194,11 @@
   }
   .textContainer button {
     font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .sectionWrapper {
+    height: 110vh;
   }
 }

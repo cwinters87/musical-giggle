@@ -3,7 +3,10 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Image from "../../images/homePage/completeToolset.png"
 import ImageMobile from "../../images/homePage/completeToolsetMobile.png"
-import testImg from "../../images/homePage/icon-intro-callcenter-active.png"
+import iconOne from "../../images/homePage/icon-intro-callcenter-active.png"
+import iconTwo from "../../images/homePage/icon-intro-crm-active.png"
+import iconThree from "../../images/homePage/icon-intro-helpdesk-active.png"
+import iconFour from "../../images/homePage/icon-intro-omni-active.png"
 import * as styles from "./completeToolset.module.css"
 
 const CompleteToolsetCard = () => {
@@ -63,9 +66,9 @@ const CompleteToolsetCard = () => {
             <div id={styles.subTitle}>
               <p>
                 We work with you to develop a customized product that is
-                tailored to your exact <br />
+                tailored to your exact <br className={styles.breakPoint} />
                 business needs. TaskFlow was created exclusively for the unique
-                needs of <br />
+                needs of <br className={styles.breakPoint} />
                 businesses seeking a comprehensive CRM solution.
               </p>
             </div>
@@ -80,7 +83,7 @@ const CompleteToolsetCard = () => {
               >
                 <div className={styles.cardContent}>
                   <img
-                    src={testImg}
+                    src={iconOne}
                     ref={firstCardIcon}
                     className={styles.icon}
                     alt="Contact Center Icon"
@@ -104,14 +107,15 @@ const CompleteToolsetCard = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <div className={styles.cardContent}>
-                  <StaticImage
+                  <img src={iconTwo} className={styles.icon} alt="CRM Icon" />
+                  {/* <StaticImage
                     src="../../images/homePage/icon-intro-crm-active.png"
                     placeholder=""
                     alt="icon"
                     transformOptions={{ fit: "contain" }}
                     height={100}
                     className={styles.icon}
-                  />
+                  /> */}
                   <h3 className={styles.cardTitle}>CRM</h3>
                 </div>
               </Link>
@@ -122,14 +126,19 @@ const CompleteToolsetCard = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <div className={styles.cardContent}>
-                  <StaticImage
+                  <img
+                    src={iconThree}
+                    className={styles.icon}
+                    alt="Helpdesk Icon"
+                  />
+                  {/* <StaticImage
                     src="../../images/homePage/icon-intro-helpdesk-active.png"
                     placeholder=""
                     alt="icon"
                     transformOptions={{ fit: "contain" }}
                     height={100}
                     className={styles.icon}
-                  />
+                  /> */}
                   <h3 className={styles.cardTitle}>Helpdesk</h3>
                 </div>
               </Link>
@@ -140,14 +149,19 @@ const CompleteToolsetCard = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <div className={styles.cardContent}>
-                  <StaticImage
+                  <img
+                    src={iconFour}
+                    className={styles.icon}
+                    alt="Omni-Channel Icon"
+                  />
+                  {/* <StaticImage
                     src="../../images/homePage/icon-intro-omni-active.png"
                     placeholder=""
                     alt="icon"
                     transformOptions={{ fit: "contain" }}
                     height={100}
                     className={styles.icon}
-                  />
+                  /> */}
                   <h3 className={styles.cardTitle}>Omni-Channel</h3>
                 </div>
               </Link>
