@@ -4,7 +4,7 @@ import NavBar from "./navbar"
 import Footer from "./footer"
 import CookieConsent from "../components/cookieConsent/CookieConsent"
 import * as styles from "./layout.module.css"
-import FloatingChat from "../components/chatbot/FloatingChat"
+import FloatingChat from "../components/chatbot/floatingChat"
 
 export default function Layout({ children }) {
   return (
