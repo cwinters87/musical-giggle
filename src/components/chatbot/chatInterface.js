@@ -40,7 +40,7 @@ const ChatInterface = () => {
         { role: "user", content: userInput },
       ]
 
-      const response = await fetch("http://localhost:3000/api/chatbot", {
+      const response = await fetch(process.env.GATSBY_API_CHATBOT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -61,7 +61,7 @@ const ChatInterface = () => {
     } catch (error) {
       console.error("Error:", error)
       setErrorMessage(
-        "There was an error processing your request. Please try again."
+        "There was an error processing your request. Please try again later."
       )
     }
     setIsLoading(false)
