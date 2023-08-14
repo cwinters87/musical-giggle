@@ -1,0 +1,67 @@
+.floatingChatContainer {
+  transition: all 0.25s ease-out;
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  z-index: 1000;
+}
+
+.floatingChatContainer:hover {
+  transform: translateY(-0.12rem) scale(1.1);
+}
+
+.chatBubble {
+  width: 100px;
+  height: 75px;
+  background-color: transparent;
+  border-radius: 50%;
+  /* border: solid 2px var(--money-green); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.bubble {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+}
+
+.img {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 35px;
+  width: auto;
+}
+
+.chatInterface {
+  transition: all 0.15s ease-in;
+  width: 600px;
+  height: 800px;
+  background-color: white;
+  border: solid 2px var(--money-green);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 10% 5% 5% 5%;
+  position: relative;
+}
+
+.close {
+  font: var(--font-regular);
+  font-weight: 600;
+  font-size: 1.2rem;
+  /* border: solid 2px red; */
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: transparent;
+  border-color: transparent;
+  width: 25px;
+}

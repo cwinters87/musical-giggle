@@ -1,6 +1,6 @@
 import React, { useRef } from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import Image from "../../images/homePage/completeToolset.png"
 import ImageMobile from "../../images/homePage/completeToolsetMobile.png"
 import iconOne from "../../images/homePage/icon-intro-callcenter-active.png"

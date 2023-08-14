@@ -22,7 +22,7 @@ const theme = createTheme({
         {
           props: { variant: "outlined" },
           style: {
-            color: "var(--primary-font-colour)",
+            color: "var(--primary-font-color)",
             borderColor: "grey",
             "&:hover": {
               color: "#fff",
