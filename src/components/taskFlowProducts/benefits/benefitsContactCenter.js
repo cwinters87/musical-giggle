@@ -45,7 +45,7 @@ const BenefitsOriginationCard = () => {
             <img src={imageThree} alt="experience icon" />
           </div>
           <div className={styles.title}>
-            <h3>Enhacned Experience</h3>
+            <h3>Enhanced Experience</h3>
           </div>
           <div className={styles.subTitle}>
             <p>
