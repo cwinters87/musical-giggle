@@ -7,6 +7,7 @@ import DemoFormCard from "../components/demoForm/demoFormCard"
 import FadeInFromBottom from "../components/effects/fadeInFromBottom"
 import FadeInFromLeft from "../components/effects/fadeInFromLeft"
 import BenefitsContactCenterCard from "../components/taskFlowProducts/benefits/benefitsContactCenter"
+import LoveContactCenter from "../components/taskFlowProducts/reasonsToLove/contactCenterLove"
 import DynamicProductCard from "../components/taskFlowProducts/productCard"
 import DynamicProductCardReverse from "../components/taskFlowProducts/productCardReverse"
 import ManagementImg from "../images/taskFlowProducts/management/image-management-portal.png"
@@ -25,6 +26,10 @@ const ContactCenter = () => {
 
       <FadeInFromBottom>
         <BenefitsContactCenterCard />
+      </FadeInFromBottom>
+
+      <FadeInFromBottom>
+        <LoveContactCenter />
       </FadeInFromBottom>
 
       <FadeInFromLeft>
