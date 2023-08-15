@@ -2,30 +2,28 @@ import * as React from "react"
 import { Button } from "../../shared"
 import { navigate } from "gatsby"
 import ScrollFadeInImage from "../../effects/popOutImg"
-import imgPop from "../../../images/taskFlowProducts/contactCenter/pop-contact-center.png"
-import Image from "../../../images/taskFlowProducts/contactCenter/hero-contact-center.png"
-import ImageMobile from "../../../images/taskFlowProducts/contactCenter/hero-contact-center.png"
+import imgPop from "../../../images/taskFlowProducts/helpdesk/pop-helpdesk.png"
+import Image from "../../../images/taskFlowProducts/helpdesk/hero-helpdesk.png"
+import ImageMobile from "../../../images/taskFlowProducts/helpdesk/hero-helpdesk.png"
 import * as styles from "./hero.module.css"
 
-const ContactCenterHero = () => {
+const HelpdeskHero = () => {
   return (
     <div className={styles.sectionWrapper}>
       <div className={styles.container}>
         <div className={styles.textContainer}>
           <div className={styles.middleWrapper}>
             <h2 className={styles.title}>
-              Streamline customer <br className={styles.topBreakPoint} />
-              communication with <br className={styles.topBreakPoint} />
-              advance capabilities.
+              Revolutionizing how <br className={styles.topBreakPoint} />
+              you manage customer <br className={styles.topBreakPoint} />
+              support.
             </h2>
             <p className={styles.subTitle}>
-              TaskFlow's cloud-based Contact Center software solution{" "}
+              Crafted on our unified cloud-based platform, TaskFlow{" "}
               <br className={styles.bottomBreakPoint} />
-              seamlessly connects agents and customers, empowering{" "}
+              Helpdesk gives your support team the power of{" "}
               <br className={styles.bottomBreakPoint} /> your team to deliver
-              exceptional service, every single{" "}
-              <br className={styles.bottomBreakPoint} />
-              interaction.
+              comprehensive customer data, all in one place{" "}
             </p>
             <div className={styles.imgContainerMobile}>
               <img src={ImageMobile} alt="TaskSuite Origination Product" />
@@ -67,4 +65,4 @@ const ContactCenterHero = () => {
   )
 }
 
-export default ContactCenterHero
+export default HelpdeskHero

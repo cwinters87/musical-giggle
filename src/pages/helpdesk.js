@@ -2,98 +2,86 @@ import * as React from "react"
 import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
 import ProductNav from "../components/taskFlowProducts/productNav"
-// import ManagementHero from "../components/loanProducts/hero/heroManagement"
-// import DemoFormCard from "../components/demoForm/demoFormCard"
-// import FadeInFromBottom from "../components/effects/fadeInFromBottom"
-// import FadeInFromLeft from "../components/effects/fadeInFromLeft"
-// import BenefitsManagementCard from "../components/loanProducts/benefits/benefitsManagement"
-// import DynamicProductCard from "../components/loanProducts/productCard"
-// import DynamicProductCardReverse from "../components/loanProducts/productCardReverse"
-// import ManagementImg from "../images/loanProducts/management/image-management-portal.png"
-// import ReportingImg from "../images/loanProducts/management/image-management-reporting.png"
-// import SecurityImg from "../images/loanProducts/management/image-management-security.png"
-// import IntegrationsImg from "../images/loanProducts/management/image-management-integrations.png"
-// import TogetherCard from "../components/loanProducts/togetherCard"
-// import ManagementFeaturesCard from "../components/loanProducts/features/managementFeatures"
-import ComingSoonCard from "../components/comingSoon"
+import HelpdeskHero from "../components/taskFlowProducts/hero/heroHelpdesk"
+import BenefitsHelpdeskCard from "../components/taskFlowProducts/benefits/benefitsHelpdesk"
+import DynamicProductCard from "../components/taskFlowProducts/productCard"
+import DynamicProductCardReverse from "../components/taskFlowProducts/productCardReverse"
+import FeaturesHelpdeskCard from "../components/taskFlowProducts/features/featuresHelpdesk"
+import TogetherCard from "../components/taskFlowProducts/togetherCard"
+import DemoFormCard from "../components/demoForm/demoFormCard"
+import TicketsImg from "../images/taskFlowProducts/helpdesk/image-helpdesk-tickets.png"
+import SupportImg from "../images/taskFlowProducts/helpdesk/image-helpdesk-support.png"
+import AutomatedImg from "../images/taskFlowProducts/helpdesk/image-helpdesk-automated.png"
+import CollaborationImg from "../images/taskFlowProducts/helpdesk/image-helpdesk-collaboration.png"
+import FadeInFromBottom from "../components/effects/fadeInFromBottom"
+import FadeInFromLeft from "../components/effects/fadeInFromLeft"
 
 const Helpdesk = () => {
   return (
     <Layout>
       <ProductNav />
-      <ComingSoonCard />
 
-      {/* 
-
-      <ManagementHero />
+      <HelpdeskHero />
 
       <FadeInFromBottom>
-        <BenefitsManagementCard />
+        <BenefitsHelpdeskCard />
       </FadeInFromBottom>
 
       <FadeInFromLeft>
         <DynamicProductCard
-          headerTitle={"Online Borrower Portal"}
-          cardTitle={
-            "Secure white-labeled portal for borrowers to access loan information"
-          }
+          headerTitle={"Ticket Management"}
+          cardTitle={"Boost support capabilities"}
           cardSubTitle={
-            "Empower your clients to effortlessly access loan details, make payments, and apply for new loans, all within a seamless branded experience."
+            "TaskFlow Helpdesk empowers your support team to effecitvely track, prioritize, and manage customer support tickets, ensuring no issue goes unresolved."
           }
-          Img={ManagementImg}
+          Img={TicketsImg}
         />
       </FadeInFromLeft>
 
       <FadeInFromBottom>
         <DynamicProductCardReverse
-          headerTitle={"Intelligent Reporting"}
-          cardTitle={
-            "Real-time loan tracking and reporting that surfaces the data you need"
-          }
+          headerTitle={"Multi-channel Support"}
+          cardTitle={"Communicate seamlessly"}
           cardSubTitle={
-            "Unlock powerful insights with Intelligent Reporting, delivering essential data for informed decision-making."
+            "TaskFlow Helpdesk allows your business to deliver stellar customer support across multiple channels, including email, phone, live chat, and social media, meeting customers where they are."
           }
-          Img={ReportingImg}
+          Img={SupportImg}
         />
       </FadeInFromBottom>
 
       <FadeInFromLeft>
         <DynamicProductCard
-          headerTitle={"Data Security"}
-          cardTitle={
-            "Advanced security features to ensure complete data protection, always"
-          }
+          headerTitle={"Automated Responses"}
+          cardTitle={"Tasks on autopilot"}
           cardSubTitle={
-            "Experience peace of mind with Data Security, offering advanced features for comprehensive protection of sensitive information at all times"
+            "Our platform can send automated responses to common queries, freeing up time for your support agents to focus on more complex issues."
           }
-          Img={SecurityImg}
+          Img={AutomatedImg}
         />
       </FadeInFromLeft>
 
       <FadeInFromBottom>
         <DynamicProductCardReverse
-          headerTitle={"Robust Integrations"}
-          cardTitle={
-            "Integration with credit reporting, document scanning, and other tools"
-          }
+          headerTitle={"Collaboration Tools"}
+          cardTitle={"Teamwork made easy"}
           cardSubTitle={
-            "Enhance your workflow by effortlessly connecting to vital tools for streamlined loan operations."
+            "TaskFlow Helpdesk fosters efficient team collaboration with features that enable multiple team members to work together on a single ticket."
           }
-          Img={IntegrationsImg}
+          Img={CollaborationImg}
         />
       </FadeInFromBottom>
 
       <FadeInFromLeft>
-        <ManagementFeaturesCard />
+        <FeaturesHelpdeskCard />
       </FadeInFromLeft>
 
       <FadeInFromBottom>
-        <TogetherCard pageName={"Management"} />
+        <TogetherCard pageName={"Helpdesk solution"} />
       </FadeInFromBottom>
 
       <FadeInFromBottom>
         <DemoFormCard />
-      </FadeInFromBottom> */}
+      </FadeInFromBottom>
     </Layout>
   )
 }

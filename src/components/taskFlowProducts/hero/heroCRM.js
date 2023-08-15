@@ -2,33 +2,34 @@ import * as React from "react"
 import { Button } from "../../shared"
 import { navigate } from "gatsby"
 import ScrollFadeInImage from "../../effects/popOutImg"
-import imgPop from "../../../images/taskFlowProducts/contactCenter/pop-contact-center.png"
-import Image from "../../../images/taskFlowProducts/contactCenter/hero-contact-center.png"
-import ImageMobile from "../../../images/taskFlowProducts/contactCenter/hero-contact-center.png"
+import imgPop from "../../../images/taskFlowProducts/CRM/pop-crm.png"
+import Image from "../../../images/taskFlowProducts/CRM/hero-crm.png"
+import ImageMobile from "../../../images/taskFlowProducts/CRM/hero-crm.png"
 import * as styles from "./hero.module.css"
 
-const ContactCenterHero = () => {
+const CRMHero = () => {
   return (
     <div className={styles.sectionWrapper}>
       <div className={styles.container}>
         <div className={styles.textContainer}>
           <div className={styles.middleWrapper}>
             <h2 className={styles.title}>
-              Streamline customer <br className={styles.topBreakPoint} />
-              communication with <br className={styles.topBreakPoint} />
-              advance capabilities.
+              The ultimate cloud-
+              <br className={styles.topBreakPoint} />
+              based solution for <br className={styles.topBreakPoint} />
+              cutomer relationships.
             </h2>
             <p className={styles.subTitle}>
-              TaskFlow's cloud-based Contact Center software solution{" "}
+              Built on a unified data platform, TaskFlow's CRM{" "}
               <br className={styles.bottomBreakPoint} />
-              seamlessly connects agents and customers, empowering{" "}
-              <br className={styles.bottomBreakPoint} /> your team to deliver
-              exceptional service, every single{" "}
+              centralizes all customer interactions and data, ensuring{" "}
+              <br className={styles.bottomBreakPoint} /> your team has a
+              comprehensive 360-degree view of your{" "}
               <br className={styles.bottomBreakPoint} />
-              interaction.
+              customers at their fingertips.
             </p>
             <div className={styles.imgContainerMobile}>
-              <img src={ImageMobile} alt="TaskSuite Origination Product" />
+              <img src={ImageMobile} alt="TaskFlow CRM Product" />
             </div>
           </div>
           <Button
@@ -57,7 +58,7 @@ const ContactCenterHero = () => {
             <source media="(min-width: 992px)" srcSet={Image} />
             <img
               src={Image}
-              alt="TaskSuite hero product"
+              alt="TaskFlow hero product"
               style={{ width: "auto", height: "100%" }}
             />
           </picture>
@@ -67,4 +68,4 @@ const ContactCenterHero = () => {
   )
 }
 
-export default ContactCenterHero
+export default CRMHero

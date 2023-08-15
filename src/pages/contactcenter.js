@@ -6,13 +6,13 @@ import ContactCenterHero from "../components/taskFlowProducts/hero/heroContactCe
 import DemoFormCard from "../components/demoForm/demoFormCard"
 import FadeInFromBottom from "../components/effects/fadeInFromBottom"
 import FadeInFromLeft from "../components/effects/fadeInFromLeft"
-import BenefitsContactCenter from "../components/taskFlowProducts/benefits/benefitsContactCenter"
+import BenefitsContactCenterCard from "../components/taskFlowProducts/benefits/benefitsContactCenter"
 import DynamicProductCard from "../components/taskFlowProducts/productCard"
 import DynamicProductCardReverse from "../components/taskFlowProducts/productCardReverse"
 import ManagementImg from "../images/taskFlowProducts/management/image-management-portal.png"
 import ReportingImg from "../images/taskFlowProducts/management/image-management-reporting.png"
 import SecurityImg from "../images/taskFlowProducts/management/image-management-security.png"
-import IntegrationsImg from "../images/taskFlowProducts/management/image-management-integrations.png"
+import AnalyticsImg from "../images/taskFlowProducts/contactCenter/graphic-callcenter-reporting.png"
 import TogetherCard from "../components/taskFlowProducts/togetherCard"
 import FeaturesContactCenterCard from "../components/taskFlowProducts/features/featuresContactCenter"
 
@@ -24,7 +24,7 @@ const ContactCenter = () => {
       <ContactCenterHero />
 
       <FadeInFromBottom>
-        <BenefitsContactCenter />
+        <BenefitsContactCenterCard />
       </FadeInFromBottom>
 
       <FadeInFromLeft>
@@ -67,7 +67,7 @@ const ContactCenter = () => {
           cardSubTitle={
             "Comprehensive dashboards and analytics tools that provide insights into key performance indicators (KPIs), including call abandonment rates, average speed of answer, first call resolutions, etc."
           }
-          Img={IntegrationsImg}
+          Img={AnalyticsImg}
         />
       </FadeInFromBottom>
 

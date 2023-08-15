@@ -19,7 +19,8 @@ const TogetherCard = ({ pageName }) => {
           <div id={styles.subTitle}>
             <p>
               TaskFlows {pageName} tools are even more powerful when utilized
-              alongside our full suite. <br className={styles.breakPoint} />
+              alongside our full product line-up.{" "}
+              <br className={styles.breakPoint} />
               Our all-in-one platform puts the control at your fingertips.
             </p>
           </div>

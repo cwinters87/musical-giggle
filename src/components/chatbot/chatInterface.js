@@ -17,7 +17,7 @@ const ChatInterface = () => {
     {
       role: "system",
       content:
-        "You are a knowledgeable salesperson for TaskSuite. Your goal is to provide accurate information about our products and assist potential customers in making a purchase.",
+        "You are a knowledgeable salesperson for TaskSuite. Your goal is to provide accurate information about our products, assist potential customers in making a purchase and guiding them to book a demo at https://tasksuite.com/contact.",
     },
     {
       role: "assistant",

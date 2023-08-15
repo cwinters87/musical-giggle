@@ -6,7 +6,7 @@ import imageFour from "../../../images/taskFlowProducts/contactCenter/icon-integ
 import imageFive from "../../../images/taskFlowProducts/contactCenter/icon-productivity.png"
 import * as styles from "./benefitsContactCenter.module.css"
 
-const BenefitsOriginationCard = () => {
+const BenefitsContactCenterCard = () => {
   return (
     <div className={styles.sectionWrapper}>
       <div className={styles.container}>
@@ -88,4 +88,4 @@ const BenefitsOriginationCard = () => {
   )
 }
 
-export default BenefitsOriginationCard
+export default BenefitsContactCenterCard

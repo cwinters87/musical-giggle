@@ -2,43 +2,37 @@ import * as React from "react"
 import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
 import ProductNav from "../components/taskFlowProducts/productNav"
-// import ManagementHero from "../components/loanProducts/hero/heroManagement"
-// import DemoFormCard from "../components/demoForm/demoFormCard"
-// import FadeInFromBottom from "../components/effects/fadeInFromBottom"
-// import FadeInFromLeft from "../components/effects/fadeInFromLeft"
-// import BenefitsManagementCard from "../components/loanProducts/benefits/benefitsManagement"
-// import DynamicProductCard from "../components/loanProducts/productCard"
-// import DynamicProductCardReverse from "../components/loanProducts/productCardReverse"
-// import ManagementImg from "../images/loanProducts/management/image-management-portal.png"
-// import ReportingImg from "../images/loanProducts/management/image-management-reporting.png"
-// import SecurityImg from "../images/loanProducts/management/image-management-security.png"
-// import IntegrationsImg from "../images/loanProducts/management/image-management-integrations.png"
-// import TogetherCard from "../components/loanProducts/togetherCard"
-// import ManagementFeaturesCard from "../components/loanProducts/features/managementFeatures"
-import ComingSoonCard from "../components/comingSoon"
+import CRMHero from "../components/taskFlowProducts/hero/heroCRM"
+import DemoFormCard from "../components/demoForm/demoFormCard"
+import FadeInFromBottom from "../components/effects/fadeInFromBottom"
+import FadeInFromLeft from "../components/effects/fadeInFromLeft"
+import BenefitsCRMCard from "../components/taskFlowProducts/benefits/benefitsCRM"
+import DynamicProductCard from "../components/taskFlowProducts/productCard"
+import DynamicProductCardReverse from "../components/taskFlowProducts/productCardReverse"
+import ManagementImg from "../images/taskFlowProducts/CRM/image-crm-contacts.png"
+import ReportingImg from "../images/taskFlowProducts/CRM/image-crm-tracking.png"
+import SecurityImg from "../images/taskFlowProducts/CRM/image-crm-pipeline.png"
+import AnalyticsImg from "../images/taskFlowProducts/CRM/image-crm-workflows.png"
+import TogetherCard from "../components/taskFlowProducts/togetherCard"
+import CRMFeaturesCard from "../components/taskFlowProducts/features/featuresCRM"
 
 const CRM = () => {
   return (
     <Layout>
       <ProductNav />
-      <ComingSoonCard />
 
-      {/* 
-
-      <ManagementHero />
+      <CRMHero />
 
       <FadeInFromBottom>
-        <BenefitsManagementCard />
+        <BenefitsCRMCard />
       </FadeInFromBottom>
 
       <FadeInFromLeft>
         <DynamicProductCard
-          headerTitle={"Online Borrower Portal"}
-          cardTitle={
-            "Secure white-labeled portal for borrowers to access loan information"
-          }
+          headerTitle={"Contact & Lead Management"}
+          cardTitle={"Manage contacts and leads"}
           cardSubTitle={
-            "Empower your clients to effortlessly access loan details, make payments, and apply for new loans, all within a seamless branded experience."
+            "TaskFlow CRM enables your business to effortlessly store, manage, and retrieve vital contact information such as names, addresses, and social media accounts. Optimizing the conversion of potential customers into tangible sales opportunities is made easy with TaskFlow CRM's powerful lead management capabilities."
           }
           Img={ManagementImg}
         />
@@ -46,12 +40,10 @@ const CRM = () => {
 
       <FadeInFromBottom>
         <DynamicProductCardReverse
-          headerTitle={"Intelligent Reporting"}
-          cardTitle={
-            "Real-time loan tracking and reporting that surfaces the data you need"
-          }
+          headerTitle={"Interaction Tracking & Comms Integration"}
+          cardTitle={"Centralized communication"}
           cardSubTitle={
-            "Unlock powerful insights with Intelligent Reporting, delivering essential data for informed decision-making."
+            "Our CRM allows your team to take notes, record conversation history, and schedule follow-up task, ensuring every interaction is accounted for. Plus, send emails, make calls, and send texts directly from TaskFlow CRM. Keeping customer communication centralized has never been simpler."
           }
           Img={ReportingImg}
         />
@@ -59,12 +51,10 @@ const CRM = () => {
 
       <FadeInFromLeft>
         <DynamicProductCard
-          headerTitle={"Data Security"}
-          cardTitle={
-            "Advanced security features to ensure complete data protection, always"
-          }
+          headerTitle={"Pipeline & Task Management"}
+          cardTitle={"Visualize and track pipeline"}
           cardSubTitle={
-            "Experience peace of mind with Data Security, offering advanced features for comprehensive protection of sensitive information at all times"
+            "With TaskFlow CRM, visualize your sales pipeline and track the status of various stages in your sales process seamlessly. Create, assign, and track tasks related to customer relationships or sales processes all within the TaskFlow CRM platform."
           }
           Img={SecurityImg}
         />
@@ -72,32 +62,30 @@ const CRM = () => {
 
       <FadeInFromBottom>
         <DynamicProductCardReverse
-          headerTitle={"Robust Integrations"}
-          cardTitle={
-            "Integration with credit reporting, document scanning, and other tools"
-          }
+          headerTitle={"Automate Worfklow & Reporting"}
+          cardTitle={"Streamline it all"}
           cardSubTitle={
-            "Enhance your workflow by effortlessly connecting to vital tools for streamlined loan operations."
+            "Our CRM automates a multitude of business processes, including task assignment, follow-up reminders, and data synchronization, to enhance operational efficiency. Also, TaskFlow CRM offers interactive dashboards and detailed reports, empowering your business with visualized data and actionable insights."
           }
-          Img={IntegrationsImg}
+          Img={AnalyticsImg}
         />
       </FadeInFromBottom>
 
       <FadeInFromLeft>
-        <ManagementFeaturesCard />
+        <CRMFeaturesCard />
       </FadeInFromLeft>
 
       <FadeInFromBottom>
-        <TogetherCard pageName={"Management"} />
+        <TogetherCard pageName={"CRM"} />
       </FadeInFromBottom>
 
       <FadeInFromBottom>
         <DemoFormCard />
-      </FadeInFromBottom> */}
+      </FadeInFromBottom>
     </Layout>
   )
 }
 
-export const Head = () => <Seo title="TaskFlow - CRM" />
+export const Head = () => <Seo title="TaskFlow - Contact Center Solution" />
 
 export default CRM
