@@ -13,7 +13,7 @@ const DynamicProductCard = ({ headerTitle, cardTitle, cardSubTitle, Img }) => {
           </div>
           <div className={styles.imgContainerMobile}>
             <div className={styles.imgWrapperMobile}>
-              <img src={Img} alt="TaskSuite Product" />
+              <img src={Img} alt="TaskFlow Product" />
             </div>
           </div>
           <div className={styles.middleWrapper}>
@@ -31,8 +31,9 @@ const DynamicProductCard = ({ headerTitle, cardTitle, cardSubTitle, Img }) => {
         <div className={styles.imgContainer}>
           <div className={styles.imgWrapper}>
             <img
+              className={styles.image}
               src={Img}
-              alt="TaskSuite product icons"
+              alt="TaskFlow product icons"
               style={{ width: "auto", height: "100%" }}
             />
           </div>
