@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* border: solid 2px red; */
 }
 
@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* border: solid 2px orange; */
 }
 
@@ -43,14 +43,15 @@
   color: var(--primary-font-color);
   height: auto;
   width: 250px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 1rem; */
+  /* border: solid 2px red; */
 }
 
-.title {
+.numberContainer {
   width: 50px;
   height: 50px;
   display: flex;
@@ -60,7 +61,7 @@
   background-color: var(--money-green);
 }
 
-.title h3 {
+.number {
   margin: 0;
   color: var(--secondary-font-color);
   font-family: var(--font-bold);
@@ -68,21 +69,53 @@
   font-weight: 600;
 }
 
-.subTitle {
+.card details {
+  /* border: 2px solid green; */
+  display: inline;
   width: 100%;
 }
 
-.subTitle p {
+.card details summary {
+  font-weight: bold;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+
+
+.title {
+  font-family: var(--font-bold);
+  text-align: center;
+  color: var(--money-green);
   margin: 0;
+}
+
+.subTitle {
+  width: 100%;
+  margin: 0;
+  padding-top: 1.25rem;
   font-family: var(--font-light);
   font-weight: 600;
   text-align: center;
   color: var(--money-green);
 }
 
+.card details[open] summary svg{
+  display: none;
+}
+
+/* .card details[open] summary {
+  border-bottom: 1px solid var(--money-green);
+} */
+
 @media only screen and (min-width: 2561px) {
   .cardContainer {
-    /* height: 48svh; */
     max-width: 2560px;
     padding: 26px 180px;
   }
@@ -90,42 +123,33 @@
 
 @media only screen and (max-width: 1921px) {
   .cardContainer {
-    /* height: 40svh; */
     gap: 5rem;
   }
-  /* .numberContainer {
-    height: 70px;
-  } */
-  .title h3 {
+  .number {
     font-size: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 1600px) {
   .cardContainer {
-    /* height: 50svh; */
     gap: 4rem;
   }
-  /* .numberContainer {
-    height: 40px;
-  } */
-  .title h3 {
+  .number {
     font-size: 1.3rem;
   }
-  .subTitle p {
+  .subTitle {
     font-size: 0.9rem;
   }
 }
 
 @media only screen and (max-width: 1080px) {
   .cardContainer {
-    /* height: 70svh; */
     gap: 1rem;
   }
-  .title h3 {
+  .number {
     font-size: 1.2rem;
   }
-  .subTitle p {
+  .subTitle {
     font-size: 0.85rem;
   }
 }
@@ -134,7 +158,6 @@
   .cardContainer {
     gap: 0;
     padding: 10% 0 0 0;
-    /* height: 75vh; */
     align-items: flex-start;
     flex: 1;
     flex-direction: row;
@@ -156,16 +179,10 @@
     flex: 1;
     flex-basis: 50%;
   }
-  /* .numberContainer {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
-  .title h3 {
+  .number {
     font-size: 1.2rem;
   }
-  .subTitle p {
+  .subTitle {
     font-size: 0.8rem;
   }
 }
@@ -174,7 +191,6 @@
   .cardContainer {
     gap: 0;
     padding: 10% 7% 0 7%;
-    /* height: 100vh; */
   }
   .card {
     height: 200px;
@@ -184,17 +200,16 @@
     flex-basis: 50%;
     gap: 0.5rem;
   }
-  .title h3 {
+  .number {
     font-size: 1rem;
   }
-  .subTitle p {
+  .subTitle {
     font-size: 0.8rem;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .cardContainer {
-    /* height: 110vh; */
     padding-top: 15%;
   }
 }
