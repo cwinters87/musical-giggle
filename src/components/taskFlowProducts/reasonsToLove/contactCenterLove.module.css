@@ -70,12 +70,14 @@
 }
 
 .card details {
-  /* border: 2px solid green; */
   display: inline;
   width: 100%;
 }
 
 .card details summary {
+  padding: 25px;
+  border: 2px solid var(--khaki-light);
+  border-radius: 9px;
   font-weight: bold;
   list-style: none;
   text-align: center;
@@ -85,9 +87,17 @@
   justify-content: center;
   gap: 2rem;
   position: relative;
+  transition: 0.1s;
 }
 
-
+.card details summary:hover {
+  cursor: pointer;
+  background-color: var(--titanium-grey);
+  border: solid 2px #0e416c;
+  filter: brightness(105%);
+  transform: translateY(-0.12rem);
+  transition: 0.25s;
+}
 
 .title {
   font-family: var(--font-bold);
@@ -104,11 +114,20 @@
   font-weight: 600;
   text-align: center;
   color: var(--money-green);
+  /* border: 2px solid var(--money-green); */
+  transition: 3s;
 }
 
-.card details[open] summary svg{
-  display: none;
+.card details[open] summary {
+  border: none;
+  border-bottom: 2px solid var(--money-green);
+  border-radius: 0;
+  transition: 0.25s;
 }
+
+/* .card details[open] summary svg {
+  display: none;
+} */
 
 /* .card details[open] summary {
   border-bottom: 1px solid var(--money-green);
