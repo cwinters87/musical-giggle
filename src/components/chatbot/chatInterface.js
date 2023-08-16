@@ -17,7 +17,7 @@ const ChatInterface = () => {
     {
       role: "system",
       content:
-        "You are a knowledgeable salesperson for TaskSuite. Your goal is to provide accurate information about our products, assist potential customers in making a purchase and guiding them to book a demo at https://tasksuite.com/contact.",
+        "You are a knowledgeable salesperson for TaskSuite. Your goal is to provide accurate information about our products, assist potential customers in making a purchase and guiding them to book a demo at https://tasksuite.com/contact. You keep your responses simple and limit to 50 words or less. You always want to steer the conversation back to booking a demo or educating the user on our products. If the user is looking for support for our product, have them email support@tasksuite.com",
     },
     {
       role: "assistant",
@@ -30,7 +30,8 @@ const ChatInterface = () => {
     sessionStorage.setItem("chatHistory", JSON.stringify(chatHistory))
   }, [chatHistory])
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault()
     setIsLoading(true)
     try {
       // Always include the initial context and append the latest user input
@@ -71,26 +72,31 @@ const ChatInterface = () => {
     <div className={styles.container}>
       <div className={styles.chatHistory}>
         {chatHistory.map((message, idx) => (
-          <p className={styles.text} key={idx}>
-            <strong>
-              {message.role.charAt(0).toUpperCase() + message.role.slice(1)}:
-            </strong>{" "}
-            {message.content}
-          </p>
+          <div
+            key={idx}
+            className={`${styles.messageContainer} ${styles[message.role]}`}
+          >
+            <p className={styles.text}>
+              <strong className={styles.hidden}>
+                {message.role.charAt(0).toUpperCase() + message.role.slice(1)}:
+              </strong>{" "}
+              {message.content}
+            </p>
+          </div>
         ))}
         {isLoading && <div className={styles.spinner}></div>}
         {errorMessage && <p className={styles.error}>{errorMessage}</p>}
       </div>
-      <div className={styles.formContainer}>
+      <form className={styles.form}>
         <input
           className={styles.input}
           value={userInput}
           onChange={(e) => setUserInput(e.target.value)}
         />
-        <button className={styles.send} onClick={handleSubmit}>
+        <button className={styles.button} onClick={(e) => handleSubmit(e)}>
           Send
         </button>
-      </div>
+      </form>
     </div>
   )
 }

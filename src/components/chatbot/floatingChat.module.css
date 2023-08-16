@@ -3,11 +3,7 @@
   position: fixed;
   bottom: 5%;
   right: 3%;
-  z-index: 1000;
-}
-
-.floatingChatContainer:hover {
-  transform: translateY(-0.12rem) scale(1.1);
+  z-index: 30;
 }
 
 .chatBubble {
@@ -15,12 +11,16 @@
   height: 75px;
   background-color: transparent;
   border-radius: 50%;
-  /* border: solid 2px var(--money-green); */
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   position: relative;
+  transition: all 0.25s ease-out;
+}
+
+.chatBubble:hover {
+  transform: translateY(-0.12rem) scale(1.1);
 }
 
 .bubble {
