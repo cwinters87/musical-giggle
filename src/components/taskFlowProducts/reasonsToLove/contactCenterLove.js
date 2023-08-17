@@ -1,7 +1,5 @@
 import * as React from "react"
-
 import * as styles from "./contactCenterLove.module.css"
-import SmallDownArrow from "../../effects/smallDownArrow"
 
 const LoveContactCenter = () => {
   return (
@@ -25,14 +23,13 @@ const LoveContactCenter = () => {
                   Browser-Based <br />
                   Calling
                 </h4>
-                {/* <SmallDownArrow /> */}
+                <h5 className={styles.readMore}>
+                  Read More <span className={styles.triangle}></span>
+                </h5>
               </summary>
               <p className={styles.subTitle}>
                 Log into TaskFlow from any browser and start making calls
-                without the need for cumbersome traditional equipment. Enjoy the
-                freedom of mobility and flexibility, and deliver customer
-                service that exceeds expectations, no matter where your agents
-                are based.
+                without the need for cumbersome traditional equipment.
               </p>
             </details>
           </div>
@@ -47,15 +44,13 @@ const LoveContactCenter = () => {
                   Dashboard <br />
                   Dominance
                 </h4>
+                <h5 className={styles.readMore}>
+                  Read More <span className={styles.triangle}></span>
+                </h5>
               </summary>
               <p className={styles.subTitle}>
                 With TaskFlow, you can monitor and manage your call center
-                performance like never before. Our powerful software provides
-                real-time reporting, providing you with an eagle-eye view of all
-                agent activities. Comprehensive insights include key metrics
-                such as average call abandonment rate, average speed of answer,
-                occupancy rates, percentage of calls blocked, and first call
-                resolutions.
+                performance like never before. Comprehensive with key metrics.
               </p>
             </details>
           </div>
@@ -70,14 +65,14 @@ const LoveContactCenter = () => {
                   Dialer <br />
                   Dynamics
                 </h4>
+                <h5 className={styles.readMore}>
+                  Read More <span className={styles.triangle}></span>
+                </h5>
               </summary>
               <p className={styles.subTitle}>
-                Take your call center operations to the next level with
-                TaskFlow. Creating outbound campaigns is a breeze with our
-                intuitive interface, and managing inbound calls has never been
-                smoother. Our built-in dialer and auto-dial features work in
-                harmony with intelligent routing algorithms, ensuring that every
-                incoming call reaches the right agent at the right time.
+                Take your inbound/outbound call center operations to the next
+                level with TaskFlow with our built-in dialer and auto-dial
+                features.
               </p>
             </details>
           </div>
@@ -89,16 +84,17 @@ const LoveContactCenter = () => {
                 </div>
 
                 <h4 className={styles.title}>
-                  Seamless Service <br />
-                  Excellence
+                  Superior <br />
+                  Service
                 </h4>
+                <h5 className={styles.readMore}>
+                  Read More <span className={styles.triangle}></span>
+                </h5>
               </summary>
               <p className={styles.subTitle}>
                 From handling high-volume inbound calls to executing targeted
-                outbound campaigns, TaskFlow covers all bases, maximizing your
-                team's productivity and customer satisfaction. By seamlessly
-                integrating all these aspects, we help you to deliver consistent
-                superior customer experiences.
+                outbound campaigns, TaskFlow maximizes your team's productivity
+                and customer satisfaction.
               </p>
             </details>
           </div>
@@ -113,13 +109,14 @@ const LoveContactCenter = () => {
                   Transformative <br />
                   Touchpoints
                 </h4>
+                <h5 className={styles.readMore}>
+                  Read More <span className={styles.triangle}></span>
+                </h5>
               </summary>
               <p className={styles.subTitle}>
-                With TaskFlow, we turn frustrations into solutions. Given that a
-                staggering 27% of customers cite lack of effectiveness as their
-                primary grievance with customer service, our platform is
-                designed to counteract this. TaskFlow equips your contact center
-                to exceed customer expectations consistently.
+                With TaskFlow, we turn frustrations into solutions. TaskFlow
+                equips your contact center to exceed customer expectations
+                consistently.
               </p>
             </details>
           </div>

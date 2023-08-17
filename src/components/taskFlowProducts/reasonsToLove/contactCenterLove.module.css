@@ -2,7 +2,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  /* overflow: hidden; */
   /* border: solid 2px red; */
 }
 
@@ -12,7 +11,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
   /* border: solid 2px orange; */
 }
 
@@ -43,12 +41,6 @@
   color: var(--primary-font-color);
   height: auto;
   width: 250px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem; */
-  /* border: solid 2px red; */
 }
 
 .numberContainer {
@@ -85,7 +77,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   position: relative;
   transition: 0.1s;
 }
@@ -106,6 +98,27 @@
   margin: 0;
 }
 
+.readMore {
+  font-family: var(--font-light);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--money-green);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.triangle {
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border: 6px solid transparent;
+  border-left-color: var(--money-green);
+}
+
 .subTitle {
   width: 100%;
   margin: 0;
@@ -114,24 +127,32 @@
   font-weight: 600;
   text-align: center;
   color: var(--money-green);
-  /* border: 2px solid var(--money-green); */
   transition: 3s;
 }
 
 .card details[open] summary {
   border: none;
-  border-bottom: 2px solid var(--money-green);
+  border-top: 2px solid var(--money-green);
   border-radius: 0;
   transition: 0.25s;
 }
 
-/* .card details[open] summary svg {
-  display: none;
-} */
+.card details[open] summary h5 {
+  visibility: hidden;
+  position: relative;
+}
 
-/* .card details[open] summary {
-  border-bottom: 1px solid var(--money-green);
-} */
+.card details[open] summary h5::after {
+  visibility: visible;
+  position: absolute;
+  content: "";
+  margin-top: 20px;
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border: 6px solid transparent;
+  border-top-color: var(--money-green);
+}
 
 @media only screen and (min-width: 2561px) {
   .cardContainer {
@@ -174,6 +195,13 @@
 }
 
 @media only screen and (max-width: 991px) {
+  .sectionWrapper {
+    display: none;
+  }
+  .container {
+    border: solid 2px red;
+    height: auto;
+  }
   .cardContainer {
     gap: 0;
     padding: 10% 0 0 0;
