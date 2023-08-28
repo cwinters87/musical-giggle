@@ -210,15 +210,6 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .breakPointCardFive {
-    display: block;
-  }
-  .topBreakPoint {
-    display: none;
-  }
-  .bottomBreakPoint {
-    display: none;
-  }
   .card {
     height: 200px;
     width: 300px;

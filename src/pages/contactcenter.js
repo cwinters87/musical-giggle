@@ -10,10 +10,10 @@ import BenefitsContactCenterCard from "../components/taskFlowProducts/benefits/b
 import LoveContactCenter from "../components/taskFlowProducts/reasonsToLove/contactCenterLove"
 import DynamicProductCard from "../components/taskFlowProducts/productCard"
 import DynamicProductCardReverse from "../components/taskFlowProducts/productCardReverse"
-import ManagementImg from "../images/taskFlowProducts/management/image-management-portal.png"
-import ReportingImg from "../images/taskFlowProducts/management/image-management-reporting.png"
-import SecurityImg from "../images/taskFlowProducts/management/image-management-security.png"
-import AnalyticsImg from "../images/taskFlowProducts/contactCenter/graphic-callcenter-reporting.png"
+import OmniChannelImg from "../images/taskFlowProducts/contactCenter/graphic-callcenter-omnichannel.png"
+import ACDImg from "../images/taskFlowProducts/contactCenter/graphic-callcenter-acd.png"
+import DialingImg from "../images/taskFlowProducts/contactCenter/graphic-callcenter-dialing.png"
+import ReportingImg from "../images/taskFlowProducts/contactCenter/graphic-callcenter-reporting.png"
 import TogetherCard from "../components/taskFlowProducts/togetherCard"
 import FeaturesContactCenterCard from "../components/taskFlowProducts/features/featuresContactCenter"
 
@@ -39,7 +39,7 @@ const ContactCenter = () => {
           cardSubTitle={
             "Enabling seamless communication across various channels like voice, email, SMS, web chat, and social media."
           }
-          Img={ManagementImg}
+          Img={OmniChannelImg}
         />
       </FadeInFromLeft>
 
@@ -50,7 +50,7 @@ const ContactCenter = () => {
           cardSubTitle={
             "Intelligent routing of incoming calls to the appropiate agents based on predifined criteria."
           }
-          Img={ReportingImg}
+          Img={ACDImg}
         />
       </FadeInFromBottom>
 
@@ -61,7 +61,7 @@ const ContactCenter = () => {
           cardSubTitle={
             "Automated dialing system that uses algorithms to minimize agent idle time and reduce call abandonment."
           }
-          Img={SecurityImg}
+          Img={DialingImg}
         />
       </FadeInFromLeft>
 
@@ -72,7 +72,7 @@ const ContactCenter = () => {
           cardSubTitle={
             "Comprehensive dashboards and analytics tools that provide insights into key performance indicators (KPIs), including call abandonment rates, average speed of answer, first call resolutions, etc."
           }
-          Img={AnalyticsImg}
+          Img={ReportingImg}
         />
       </FadeInFromBottom>
 

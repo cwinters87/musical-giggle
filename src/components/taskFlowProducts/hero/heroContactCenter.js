@@ -2,7 +2,7 @@ import * as React from "react"
 import { Button } from "../../shared"
 import { navigate } from "gatsby"
 import ScrollFadeInImage from "../../effects/popOutImg"
-import imgPop from "../../../images/taskFlowProducts/contactCenter/pop-contact-center.png"
+import imgPop from "../../../images/taskFlowProducts/omniChannel/pop-omni.png"
 import Image from "../../../images/taskFlowProducts/contactCenter/hero-contact-center.png"
 import ImageMobile from "../../../images/taskFlowProducts/contactCenter/hero-contact-center.png"
 import * as styles from "./hero.module.css"
@@ -16,7 +16,7 @@ const ContactCenterHero = () => {
             <h2 className={styles.title}>
               Streamline customer <br className={styles.topBreakPoint} />
               communication with <br className={styles.topBreakPoint} />
-              advance capabilities.
+              advanced capabilities.
             </h2>
             <p className={styles.subTitle}>
               TaskFlow's cloud-based Contact Center software solution{" "}

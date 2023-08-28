@@ -1,0 +1,189 @@
+.sectionWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 7%;
+  height: 30svh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.breakPointCardFive {
+  display: none;
+}
+
+.card {
+  color: var(--primary-font-color);
+  height: 330px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.2rem;
+}
+
+.title h3 {
+  margin: 0;
+  color: var(--money-green);
+  font-family: var(--font-regular);
+  text-align: center;
+  font-weight: 600;
+}
+
+.subTitle p {
+  margin: 0;
+  font-family: var(--font-light);
+  text-align: center;
+}
+
+.image {
+  height: 82px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.subTitle {
+  width: 100%;
+}
+
+@media only screen and (min-width: 2561px) {
+  .container {
+    height: 48svh;
+    max-width: 2560px;
+    padding: 26px 180px;
+  }
+}
+
+@media only screen and (max-width: 1921px) {
+  .container {
+    height: 40svh;
+    gap: 5rem;
+  }
+  .image {
+    height: 70px;
+  }
+  .title h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .container {
+    height: 50svh;
+    gap: 4rem;
+  }
+  .image {
+    height: 40px;
+  }
+  .title h3 {
+    font-size: 1.3rem;
+  }
+  .subTitle p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .container {
+    height: 70svh;
+    gap: 1rem;
+  }
+  .title h3 {
+    font-size: 1.2rem;
+  }
+  .subTitle p {
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    gap: 0;
+    padding: 10% 0 0 0;
+    height: 75vh;
+    align-items: flex-start;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .breakPointCardFive {
+    display: block;
+  }
+  .topBreakPoint {
+    display: none;
+  }
+  .bottomBreakPoint {
+    display: none;
+  }
+  .card {
+    height: 200px;
+    width: 300px;
+    padding: 0 5%;
+    flex: 1;
+    flex-basis: 50%;
+  }
+  .image {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title h3 {
+    font-size: 1.2rem;
+  }
+  .subTitle p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    gap: 0;
+    padding: 10% 7% 0 7%;
+    height: 100vh;
+  }
+  .card {
+    height: 200px;
+    width: 300px;
+    padding: 0 3%;
+    flex: 1;
+    flex-basis: 50%;
+    gap: 0.5rem;
+  }
+  .title h3 {
+    font-size: 1rem;
+  }
+  .subTitle p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    height: 110vh;
+    padding-top: 15%;
+  }
+}
