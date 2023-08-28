@@ -1,6 +1,6 @@
 import * as React from "react"
-import Image from "../../images/loanSuite/products-origination1.png"
-import ImageMobile from "../../images/loanSuite/products-origination-mobile.png"
+import Image from "../../images/aboutPage/image-about-careers.png"
+import ImageMobile from "../../images/aboutPage/image-about-careers.png"
 import { Button } from "../shared"
 import { navigate } from "gatsby"
 import * as styles from "./careers.module.css"
@@ -17,7 +17,7 @@ const CareersCard = () => {
             <div className={styles.middleWrapper}>
               <h2 className={styles.title}>
                 Want to help build the future
-                <br /> of the loan industry?
+                <br /> of customer experience software?
               </h2>
               <p className={styles.subTitle}>
                 We're always looking for talented people who <br />
@@ -50,7 +50,7 @@ const CareersCard = () => {
                 <img
                   className={styles.img}
                   src={Image}
-                  alt="TaskSuite product"
+                  alt="TaskFlow product"
                   style={{ width: "auto", height: "100%" }}
                 />
               </picture>

@@ -10,21 +10,22 @@ const DiverseTeamCard = () => {
     <div className={styles.sectionWrapper}>
       <div className={styles.container}>
         <div className={styles.textContainer}>
-          <h2 className={styles.title}>A diverse team of loan veterans</h2>
+          <h2 className={styles.title}>A diverse team of CX veterans</h2>
           <p className={styles.subTitle}>
-            We are a forward-thinking loan software company, established by
-            seasoned professionals from the lending and software development
+            We are a forward-thinking SaaS company, established by seasoned
+            professionals from the CRM, call center, and software development
             industries. We embarked on a mission to create a unified, automated,
-            and affordable loan software solution for lenders and brokers of all
-            sizes.
+            and affordable business automated software solution for contact
+            centers and businesses of all sizes.
           </p>
         </div>
         <div className={styles.numberContainer}>
           <div className={styles.item}>
             <div className={styles.count}>
-              <CountUp duration={1} delay={0.5} end={30} enableScrollSpy />+
+              <CountUp duration={1} delay={0.5} end={4} enableScrollSpy />
+              .9/5
             </div>
-            <div className={styles.text}>employees</div>
+            <div className={styles.text}>average user rating</div>
           </div>
           <div className={styles.item}>
             <div className={styles.count}>

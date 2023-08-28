@@ -9,16 +9,16 @@ const CreatedExclusivelyCard = () => {
         <div className={styles.textContainer}>
           <div className={styles.middleWrapper}>
             <h2 className={styles.title}>
-              Created exclusively for the unique{" "}
+              The All-In-One CRM, Contact Center, and Helpdesk Solution.{" "}
               <br className={styles.topBreakPoint} />
               needs of the loan industry.
             </h2>
             <p className={styles.subTitle}>
-              We understand the complexities and nuances of the loan{" "}
+              We understand the complexities and nuances of providing{" "}
               <br className={styles.bottomBreakPoint} />
-              industry, which is why we've been able to ensure our{" "}
+              exceptional service, which is why we've been able to ensure{" "}
               <br className={styles.bottomBreakPoint} />
-              solution is tailored to meet your needs and use cases.
+              our solution is tailored to meet your needs and use cases.
             </p>
             <div className={styles.imgContainerMobile}>
               <img src={Image} alt="TaskSuite Credit Product" />
@@ -31,7 +31,7 @@ const CreatedExclusivelyCard = () => {
             <source media="(min-width: 992px)" srcSet={Image} />
             <img
               src={Image}
-              alt="TaskSuite hero product"
+              alt="TaskFlow hero product"
               style={{ width: "auto", height: "100%" }}
             />
           </picture>

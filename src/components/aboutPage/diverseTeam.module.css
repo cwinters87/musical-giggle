@@ -62,7 +62,7 @@
   font-family: var(--font-regular);
   font-size: 3.8rem;
   font-weight: 600;
-  color: green;
+  color: var(--money-green);
   margin: 0;
 }
 
