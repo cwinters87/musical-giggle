@@ -76,7 +76,6 @@ a {
   --font-semi-bold: "MatterSemiBold", sans-serif;
   --font-regular: "MatterRegular", sans-serif;
 
-
   /* TaskSuite Colors: */
   /* --money-green: #004535;
   --lime-green: #00f86f;
@@ -87,8 +86,7 @@ a {
   --khaki: #eee5d8;
   --khaki-light: #efece9; */
 
-
-/* TaskFlow Colors: */
+  /* TaskFlow Colors: */
   --money-green: #153775;
   --lime-green: #00f86f;
   --cobalt-blue: #105abc;
@@ -98,7 +96,7 @@ a {
   --khaki: #efece9;
   --khaki-light: #e1e1e1;
 
-/*  #153775 (Main)
+  /*  #153775 (Main)
     #102F60 (Dark, 1st solution button)
     #0E416C (Mid, 2nd solution button)
     #246694 (Light, 3rd solution button)
@@ -121,7 +119,6 @@ a {
   --test-pallette-grey: #ada1ad;
   --test-pallette-green: #004535;
   --test-pallette-red: #ac0212;
-  
 }
 
 *,
@@ -146,15 +143,117 @@ a {
     }
 } */
 
-/* .modal-open {
-  background-color: var(--khaki-light);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: MatterLight, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Lists */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Miscellaneous */
+
+/* button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
 } */
 
-/* .modal-content {
-    
-    background-position: left bottom, right top;
-    background-repeat: no-repeat;
-} */
+.modal-open {
+  background-color: var(--khaki-light);
+}
 
 /* width */
 ::-webkit-scrollbar {
