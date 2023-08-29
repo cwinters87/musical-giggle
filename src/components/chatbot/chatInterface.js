@@ -1,16 +1,24 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { content } from "./content"
 import * as styles from "./chatInterface.module.css"
 
 const ChatInterface = () => {
   // Initialize chatHistory from sessionStorage or default to an empty array
   const initialHistory = JSON.parse(
-    sessionStorage.getItem("chatHistory") || "[]"
+    sessionStorage.getItem("chatHistory") ||
+      JSON.stringify([
+        {
+          role: "assistant",
+          content:
+            "Hello! How can I assist you today? If you have any questions or need information about our loan software solutions, feel free to ask.",
+        },
+      ])
   )
   const [chatHistory, setChatHistory] = useState(initialHistory)
   const [userInput, setUserInput] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [errorMessage, setErrorMessage] = useState(null)
+  const chatHistoryRef = useRef(null)
 
   // Initial messages for context
   const initialMessages = [
@@ -32,9 +40,39 @@ const ChatInterface = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+
+    // Clear previous error message
+    setErrorMessage(null)
+
+    // Validate input length
+    if (userInput.length > 500) {
+      setErrorMessage("Your message is too long.")
+      setIsLoading(false)
+      return
+    }
+
+    // Validate content (allowing a-zA-Z0-9 and some special characters including ')
+    if (/[^a-zA-Z0-9\s,.;!?']/.test(userInput)) {
+      setErrorMessage("Your message contains invalid characters.")
+      setIsLoading(false)
+      return
+    }
+
+    // Validate non-empty input
+    if (userInput.trim() === "") {
+      setErrorMessage("Your message is empty.")
+      setIsLoading(false)
+      return
+    }
+
+    setChatHistory((prevChatHistory) => [
+      ...prevChatHistory,
+      { role: "user", content: userInput },
+    ])
+
     setIsLoading(true)
+
     try {
-      // Always include the initial context and append the latest user input
       const messagesToSend = [
         ...initialMessages,
         ...chatHistory,
@@ -50,27 +88,35 @@ const ChatInterface = () => {
       })
       const data = await response.json()
 
-      // Update the chatHistory state with both the user's message and the bot's response
+      // Update chatHistory state with the bot's response
       setChatHistory((prevChatHistory) => [
         ...prevChatHistory,
-        { role: "user", content: userInput },
         { role: "assistant", content: data.message },
       ])
 
       setUserInput("") // Clear the input field
-      console.log("Sending chatHistory to backend:", chatHistory)
     } catch (error) {
       console.error("Error:", error)
       setErrorMessage(
         "There was an error processing your request. Please try again later."
       )
     }
+
     setIsLoading(false)
   }
 
+  useEffect(() => {
+    sessionStorage.setItem("chatHistory", JSON.stringify(chatHistory))
+
+    // Scroll chat history to the bottom
+    if (chatHistoryRef.current) {
+      chatHistoryRef.current.scrollTop = chatHistoryRef.current.scrollHeight
+    }
+  }, [chatHistory])
+
   return (
     <div className={styles.container}>
-      <div className={styles.chatHistory}>
+      <div className={styles.chatHistory} ref={chatHistoryRef}>
         {chatHistory.map((message, idx) => (
           <div
             key={idx}
@@ -84,7 +130,15 @@ const ChatInterface = () => {
             </p>
           </div>
         ))}
-        {isLoading && <div className={styles.spinner}></div>}
+        {isLoading && (
+          <div className={`${styles.messageContainer} ${styles.assistant}`}>
+            <div className={styles.typingIndicator}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        )}
         {errorMessage && <p className={styles.error}>{errorMessage}</p>}
       </div>
       <form className={styles.form}>

@@ -10,11 +10,16 @@ const FloatingChat = () => {
   return (
     <div className={styles.floatingChatContainer}>
       {isExpanded ? (
-        <div className={styles.chatInterface}>
-          <ChatInterface />
-          <button className={styles.close} onClick={() => setIsExpanded(false)}>
-            X
-          </button>
+        <div className={styles.animationContainer}>
+          <div className={styles.chatInterface}>
+            <ChatInterface />
+          </div>
+          <div
+            className={styles.closeBubble}
+            onClick={() => setIsExpanded(false)}
+          >
+            <span className={styles.close}>X</span>
+          </div>
         </div>
       ) : (
         <div className={styles.chatBubble} onClick={() => setIsExpanded(true)}>
