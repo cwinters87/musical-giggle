@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
-import * as styles from "./togetherCard.module.css"
 import { Button } from "../shared"
 import { navigate } from "gatsby"
 import ContactCenterIcon from "../../images/components/image-products-callcenter.png"
 import HelpdeskIcon from "../../images/components/image-products-helpdesk.png"
 import CRMIcon from "../../images/components/image-products-crm.png"
 import OmniIcon from "../../images/components/image-products-omnichannel.png"
+import * as styles from "./togetherCard.module.css"
 
 const TogetherCard = ({ pageName }) => {
   return (

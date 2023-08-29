@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
 import { content } from "./content"
+import robot from "../../images/components/robot.png"
 import * as styles from "./chatInterface.module.css"
 
 const ChatInterface = () => {
@@ -116,6 +117,16 @@ const ChatInterface = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.header}>
+        <img className={styles.img} src={robot} alt="Chat logo" />
+        <div>
+          <h5 className={styles.name}>TaskSuite ChatBot</h5>
+          <div className={styles.onlineStatusWrapper}>
+            <div className={styles.onlineStatus}></div>
+            <p className={styles.onlineStatusText}>Online</p>
+          </div>
+        </div>
+      </div>
       <div className={styles.chatHistory} ref={chatHistoryRef}>
         {chatHistory.map((message, idx) => (
           <div
