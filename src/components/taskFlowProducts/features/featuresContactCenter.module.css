@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
+  background-color: var(--money-green);
   /* border: solid 2px red; */
 }
 
@@ -116,6 +117,7 @@
 }
 
 @media only screen and (min-width: 2561px) {
+
   .container {
     max-width: 2560px;
     padding: 26px 180px;
