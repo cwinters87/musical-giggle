@@ -35,7 +35,7 @@ const OmniHero = () => {
           </div>
           <Button
             onClick={() => {
-              navigate("/contactcenter")
+              navigate("/contact")
             }}
             variant="outlined"
           >

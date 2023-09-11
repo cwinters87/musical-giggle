@@ -34,7 +34,7 @@ const CRMHero = () => {
           </div>
           <Button
             onClick={() => {
-              navigate("/contactcenter")
+              navigate("/contact")
             }}
             variant="outlined"
           >

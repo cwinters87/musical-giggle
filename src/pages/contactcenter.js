@@ -56,10 +56,10 @@ const ContactCenter = () => {
 
       <FadeInFromLeft>
         <DynamicProductCard
-          headerTitle={"Predictive Dialing"}
-          cardTitle={"Reduce abandoned calls"}
+          headerTitle={"Selective Dialing"}
+          cardTitle={"Increase dialing rates"}
           cardSubTitle={
-            "Automated dialing system that uses algorithms to minimize agent idle time and reduce call abandonment."
+            "Select your dialer needs, with multiple dailing methods like click to dail, power dial, and progressive dial."
           }
           Img={DialingImg}
         />

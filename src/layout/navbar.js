@@ -201,7 +201,47 @@ function NavBar() {
                 <BurgerIcon />
               </BurgerMenu>
               <MenuGroup>
-                <MenuLink
+                {/* <MenuLink
+                  onClick={handleDropdown}
+                  className={open ? "open" : ""}
+                >
+                  <p>Products</p>
+                  <ChevronIcon />
+                </MenuLink>
+                <Dropdown
+                  id="basic-menu"
+                  anchorEl={anchorEl}
+                  open={open}
+                  onClose={handleDropdownClose}
+                  MenuListProps={{
+                    "aria-labelledby": "basic-button",
+                  }}
+                  anchorOrigin={{ vertical: "bottom" }}
+                  style={{ top: value }}
+                >
+                  <DropdownItem onClick={() => navigate("/contactcenter")}>
+                    Contact Center Software
+                  </DropdownItem>
+                  <DropdownItem onClick={() => navigate("/helpdesk")}>
+                    Helpdesk
+                  </DropdownItem>
+                  <DropdownItem onClick={() => navigate("/crm")}>
+                    CRM
+                  </DropdownItem>
+                  <DropdownItem onClick={() => navigate("/omnichannel")}>
+                    Omni-Channel Communication
+                  </DropdownItem>
+                </Dropdown> */}
+                {/* <MenuLink onClick={() => navigate("/contactcenter")}>
+                  For Contact Centers
+                </MenuLink>
+                <MenuLink onClick={() => navigate("/contactcenter")}>
+                  For Financial Services
+                </MenuLink> */}
+                {/* <MenuLink onClick={() => navigate("/about")}>About</MenuLink> */}
+              </MenuGroup>
+              <MenuGroup>
+              <MenuLink
                   onClick={handleDropdown}
                   className={open ? "open" : ""}
                 >
@@ -232,15 +272,7 @@ function NavBar() {
                     Omni-Channel Communication
                   </DropdownItem>
                 </Dropdown>
-                <MenuLink onClick={() => navigate("/contactcenter")}>
-                  For Contact Centers
-                </MenuLink>
-                <MenuLink onClick={() => navigate("/contactcenter")}>
-                  For Financial Services
-                </MenuLink>
-                <MenuLink onClick={() => navigate("/about")}>About</MenuLink>
-              </MenuGroup>
-              <MenuGroup>
+              <MenuLink onClick={() => navigate("/about")}>About</MenuLink>
                 <Button
                   onClick={() => {
                     navigate("/contact")
@@ -331,12 +363,12 @@ function NavBar() {
                   </MenuLink>
                 </AccordionDetails>
               </Accordion>
-              <MenuLink onClick={() => navigate("/contactcenter")}>
+              {/* <MenuLink onClick={() => navigate("/contactcenter")}>
                 For Contact Centers
               </MenuLink>
               <MenuLink onClick={() => navigate("/contactcenter")}>
                 For Financial Services
-              </MenuLink>
+              </MenuLink> */}
               <MenuLink onClick={() => navigate("/about")}>About</MenuLink>
               {isLoggedIn && (
                 <MenuLink onClick={() => navigate("/dashboard")}>

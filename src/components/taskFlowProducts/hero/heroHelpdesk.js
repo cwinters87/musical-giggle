@@ -31,7 +31,7 @@ const HelpdeskHero = () => {
           </div>
           <Button
             onClick={() => {
-              navigate("/contactcenter")
+              navigate("/contact")
             }}
             variant="outlined"
           >

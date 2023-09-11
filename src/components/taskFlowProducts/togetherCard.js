@@ -97,11 +97,11 @@ const TogetherCard = ({ pageName }) => {
           <Button
             className={styles.button}
             onClick={() => {
-              navigate("/loansuite")
+              navigate("/contact")
             }}
             variant="blueLarge"
           >
-            <p>Explore Products</p>
+            <p>Request a demo</p>
           </Button>
         </div>
       </div>

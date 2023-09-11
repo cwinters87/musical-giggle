@@ -47,12 +47,12 @@ const ComprehensiveSolutionCard = () => {
           </div>
         </div>
         <div id={styles.linkContainer}>
-          <ArrowButton
+          {/* <ArrowButton
             onClick={() => {
               navigate("/loansuite")
             }}
             label="Discover the Solution"
-          />
+          /> */}
         </div>
       </div>
     </div>

@@ -92,7 +92,7 @@ const LoginForm = () => {
       <input type="submit" value="Login"></input>
       <div className={styles.links}>
         <Link to="/login">Forgot Password?</Link>
-        <Link to="/contact">Join TaskSuite</Link>
+        <Link to="/contact">Join TaskFlow</Link>
       </div>
     </form>
   )

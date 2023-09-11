@@ -215,7 +215,7 @@ const CurrentProcessCard = () => {
         </div>
 
         <div id={styles.linkContainer}>
-          <ArrowButton
+          {/* <ArrowButton
             onClick={() => {
               navigate("/lenders")
             }}
@@ -226,7 +226,7 @@ const CurrentProcessCard = () => {
               navigate("/lenders")
             }}
             label="For Financial Services"
-          />
+          /> */}
         </div>
       </div>
     </div>

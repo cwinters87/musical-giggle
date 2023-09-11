@@ -45,14 +45,14 @@ const Hero = () => {
             >
               <p>Get started</p>
             </Button>
-            <Button
+            {/* <Button
               onClick={() => {
                 navigate("/loansuite")
               }}
               variant="outlined"
             >
               <p>See how it works</p>
-            </Button>
+            </Button> */}
           </div>
         </section>
         <section id={styles.subContainerTwo}></section>
