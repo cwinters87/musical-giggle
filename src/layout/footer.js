@@ -51,7 +51,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className={styles.linkColumns}>
+            {/* <div className={styles.linkColumns}>
               <h5>Use Cases</h5>
               <ul className={styles.list}>
                 <li>
@@ -65,7 +65,7 @@ const Footer = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div className={styles.linkColumns}>
               <h5>Company</h5>
               <ul className={styles.list}>
@@ -81,7 +81,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className={styles.linkColumns}>
+            {/* <div className={styles.linkColumns}>
               <h5>Resources</h5>
               <ul className={styles.list}>
                 <li>
@@ -100,7 +100,7 @@ const Footer = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </section>
 
