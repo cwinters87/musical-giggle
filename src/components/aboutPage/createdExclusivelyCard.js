@@ -10,8 +10,6 @@ const CreatedExclusivelyCard = () => {
           <div className={styles.middleWrapper}>
             <h2 className={styles.title}>
               The All-In-One CRM, Contact Center, and Helpdesk Solution.{" "}
-              <br className={styles.topBreakPoint} />
-              needs of the loan industry.
             </h2>
             <p className={styles.subTitle}>
               We understand the complexities and nuances of providing{" "}
