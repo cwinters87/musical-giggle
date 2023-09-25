@@ -9,7 +9,7 @@ const TopBanner = () => {
   return (
     <div className={styles.topBanner}>
       <span>TaskFlow is part of the TaskSuite family</span>
-      <a href="https://tasksuite.com" target="_blank" rel="noreferrer">
+      <a href="https://tasksuite.com/?utm_source=taskflow&utm_medium=referral&utm_campaign=taskflow" target="_blank" rel="noreferrer">
         Learn more
       </a>
       {/* <button

@@ -142,12 +142,9 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .sectionWrapper {
-    padding-top: 5%;
-  }
   .container {
     height: 100svh;
-    padding: 7% 7% 1% 7%;
+    padding: 1% 7% 1% 7%;
   }
   .wrapper {
     flex-direction: column;
@@ -206,7 +203,7 @@
 
 @media only screen and (max-width: 768px) {
   .container {
-    padding: 12% 7% 8% 7%;
+    padding: 1% 7% 1% 7%;
   }
   .formContainer {
     height: 100%;
