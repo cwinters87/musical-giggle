@@ -4,7 +4,6 @@ import NavBar from "./navbar"
 import Footer from "./footer"
 import CookieConsent from "../components/cookieConsent/CookieConsent"
 import * as styles from "./layout.module.css"
-import FloatingChat from "../components/chatbot/floatingChat"
 
 export default function Layout({ children }) {
   return (
@@ -13,7 +12,6 @@ export default function Layout({ children }) {
       <NavBar />
       {children}
       <Footer />
-      <FloatingChat />
       <CookieConsent />
     </div>
   )
