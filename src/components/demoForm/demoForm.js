@@ -71,6 +71,7 @@ const DemoForm = () => {
 
     fetch(process.env.GATSBY_API_CREATE_LEAD, {
       method: "POST",
+      mode: "cors",
       headers: {
         "Content-Type": "application/json",
       },
