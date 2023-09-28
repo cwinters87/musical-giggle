@@ -12,7 +12,7 @@ const ComprehensiveSolutionCard = () => {
       <div className={styles.container}>
         <div id={styles.titleContainer}>
           <h2 id={styles.title}>
-            The Industry's Complete Comprehensive
+            The Industry's Complete
             <br className={styles.breakPoint} /> Business Process solution
           </h2>
           <p id={styles.subTitle}>

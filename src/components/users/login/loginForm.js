@@ -88,7 +88,7 @@ const LoginForm = () => {
         <span>Enter Password</span>
         <i></i>
       </div>
-      {error && <p className={styles.error}>{error}</p>}
+      {error && <p className={styles.error}>Incorrect email or password</p>}
       <input type="submit" value="Login"></input>
       <div className={styles.links}>
         <Link to="/login">Forgot Password?</Link>

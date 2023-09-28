@@ -27,7 +27,7 @@ const Hero = () => {
         <section id={styles.subContainerOne}>
           <h1>
             The All-In-One
-            <br className={styles.breakPointTop} /> Center Center, Helpdesk,
+            <br className={styles.breakPointTop} /> Contact Center, Helpdesk,
             <br className={styles.breakPointTop} /> and Dialer Solution.
           </h1>
           <h2>

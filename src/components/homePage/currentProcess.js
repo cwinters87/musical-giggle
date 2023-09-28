@@ -13,7 +13,7 @@ const CurrentProcessCard = () => {
         <div id={styles.titleContainer}>
           <h2 id={styles.title}>Are you happy with your current process?</h2>
           <p id={styles.subTitle}>
-            We know you aren't becasue we've been there too. TaskFlow was built
+            We know you aren't because we've been there too. TaskFlow was built
             for and by business veterans to be the platform that simply didn't
             exist.
           </p>
